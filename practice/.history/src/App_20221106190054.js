@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   const [product, setProduct] = useState([]);
   const [inputStr, setInputStr] = useState('');
+  let count = 0;
 
   useEffect(() => {
     fetch('/data/product.json')
@@ -12,6 +13,9 @@ function App() {
       console.log('데이터를 불러왔습니다.');
       setProduct(data);
     })
+    .then(
+      console.log(product)
+    )
     
   }, [])
 
@@ -27,32 +31,26 @@ function App() {
             (e) => {
               setInputStr(e.target.value);
               console.log(e.target.value);
+
             }
           }
-          value = {inputStr}
         >
         </input>
 
       </div>
-
-      <div class='container'>
-        <ul onClick={(e) => {
-          console.log(e.target.innerText);
-          setInputStr(e.target.innerText);
-        }}>
-          {product.filter((item) => {
-            if(inputStr == ""){return}
-            else if(item.name.toLowerCase().includes(inputStr.toLowerCase())){
-              return item
-            }
-          }).map((item) => {
-            return <li class='list'><button>{item.name}</button></li>
-          })
+      {/* <ul>
+        {product.filter((item) => {
+          if(inputStr == ""){return item}
+          else if(item.name.toLowerCase().includes(inputStr.toLowerCase())){
+            return item
           }
-        </ul>
-      </div>
+        }).map((item) => {
+          return <li>{item.name}</li>
+        })
+        }
+      </ul> */}
 
-      {/* <select size= {product.length}>
+      <select size= {product.length}>
         {product.filter((item) => {
           if(inputStr == ""){return item}
           else if(item.name.includes(inputStr)){
@@ -61,13 +59,9 @@ function App() {
             return item
           }
         }).map((item) => {
-          setRelProduct(relProduct, item);
-          console.log(setRelProduct);
-          // return <option>{item.name}</option>
+          return <option>{item.name}</option>
         })}
-      </select> */}
-
-
+      </select>
 
 
     </>

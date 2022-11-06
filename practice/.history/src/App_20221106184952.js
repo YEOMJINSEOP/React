@@ -12,6 +12,9 @@ function App() {
       console.log('데이터를 불러왔습니다.');
       setProduct(data);
     })
+    .then(
+      console.log(product)
+    )
     
   }, [])
 
@@ -27,47 +30,38 @@ function App() {
             (e) => {
               setInputStr(e.target.value);
               console.log(e.target.value);
+
             }
           }
-          value = {inputStr}
         >
         </input>
+        <select>
+          <option value="waffle">waffle</option>
+          <option value="sandwiches">sandwiches</option>
+        </select>
 
       </div>
-
-      <div class='container'>
-        <ul onClick={(e) => {
-          console.log(e.target.innerText);
-          setInputStr(e.target.innerText);
-        }}>
-          {product.filter((item) => {
-            if(inputStr == ""){return}
-            else if(item.name.toLowerCase().includes(inputStr.toLowerCase())){
-              return item
-            }
-          }).map((item) => {
-            return <li class='list'><button>{item.name}</button></li>
-          })
-          }
-        </ul>
-      </div>
-
-      {/* <select size= {product.length}>
+      {/* <ul>
         {product.filter((item) => {
           if(inputStr == ""){return item}
-          else if(item.name.includes(inputStr)){
-            count += 1;
-            console.log(count);
+          else if(item.name.toLowerCase().includes(inputStr.toLowerCase())){
             return item
           }
         }).map((item) => {
-          setRelProduct(relProduct, item);
-          console.log(setRelProduct);
-          // return <option>{item.name}</option>
+          return <li>{item.name}</li>
+        })
+        }
+      </ul> */}
+      <select size='3' >
+        {product.filter((item) => {
+          if(inputStr == ""){return item}
+          else if(item.name.includes(inputStr)){
+            return item
+          }
+        }).map((item) => {
+          return <option>{item.name}</option>
         })}
-      </select> */}
-
-
+      </select>
 
 
     </>

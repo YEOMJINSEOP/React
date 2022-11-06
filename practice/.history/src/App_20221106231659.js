@@ -27,9 +27,9 @@ function App() {
             (e) => {
               setInputStr(e.target.value);
               console.log(e.target.value);
+
             }
           }
-          value = {inputStr}
         >
         </input>
 

@@ -26,10 +26,11 @@ function App() {
           onChange = {
             (e) => {
               setInputStr(e.target.value);
+              this.value = e.target.innerText;
               console.log(e.target.value);
+
             }
           }
-          value = {inputStr}
         >
         </input>
 

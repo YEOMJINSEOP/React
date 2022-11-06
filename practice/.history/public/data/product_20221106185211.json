@@ -18,26 +18,6 @@
     "id": 4,
     "name": "kimchi",
     "price": 3500
-  },
-  {
-    "id": 5,
-    "name": "ricecake",
-    "price": 3500
-  },
-  {
-    "id": 6,
-    "name": "cake",
-    "price": 3500
-  },
-  {
-    "id": 7,
-    "name": "pizza",
-    "price": 3500
-  },
-  {
-    "id": 8,
-    "name": "icecream",
-    "price": 3500
   }
 
 

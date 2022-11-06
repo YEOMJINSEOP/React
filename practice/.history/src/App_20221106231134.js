@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   const [product, setProduct] = useState([]);
   const [inputStr, setInputStr] = useState('');
+  const [relProduct, setRelProduct] = useState([]);
 
   useEffect(() => {
     fetch('/data/product.json')
@@ -27,9 +28,9 @@ function App() {
             (e) => {
               setInputStr(e.target.value);
               console.log(e.target.value);
+
             }
           }
-          value = {inputStr}
         >
         </input>
 
@@ -38,7 +39,6 @@ function App() {
       <div class='container'>
         <ul onClick={(e) => {
           console.log(e.target.innerText);
-          setInputStr(e.target.innerText);
         }}>
           {product.filter((item) => {
             if(inputStr == ""){return}
