@@ -83,12 +83,17 @@ label {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: center;
   width: 704px;
   height: 179px;
 }
 
-input{
+.content input{
   width: 80%;
+}
+
+input{
+  width: 60%;
   height: 80%;
 }
 

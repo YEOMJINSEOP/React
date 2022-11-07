@@ -87,8 +87,12 @@ label {
   height: 179px;
 }
 
-input{
+.content input{
   width: 80%;
+}
+
+input{
+  width: 60%;
   height: 80%;
 }
 
