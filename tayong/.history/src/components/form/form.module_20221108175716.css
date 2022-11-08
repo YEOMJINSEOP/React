@@ -21,9 +21,7 @@ label {
   color: var(--color-orange);
 
   width: 50px;
-  margin-left: 15px;
-
-  text-align: left;
+  margin-left: 25px;
 }
 
 input{
@@ -35,21 +33,11 @@ input{
   border: none;
 
   text-align: center;
+  width:auto;
   height: 80%;
 
-  /* background-color: aquamarine; */
+  background-color: aquamarine;
 
-  overflow: hidden;
-  white-space: nowrap;
-
-}
-
-p{
-  font-family: var(--font-family-pretendard-regular);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: var(--color-black);
 }
 
 .locationContainer, .infoContainer, .title{
@@ -68,7 +56,7 @@ p{
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 12px;
+  padding: 0 6px;
 }
 
 .locationContainer {
@@ -82,10 +70,6 @@ p{
 .departure {
   width: 342px;
   height: 49px;
-}
-
-.departure input, .arrival input, .remainingTime input{
-  width: 60%;
 }
 
 .arrival {
@@ -105,28 +89,11 @@ p{
   margin-left: 20px;
 }
 
-.recruitment input{
-  width: 20px;
-  margin-left: 3px;
-  padding-right: 0;
-  margin-right: 0;
-}
-
 .transport{
   width: 188px;
   height: 49px;
   margin-left: 20px;
-
-  justify-content: space-around;
-  
 }
-
-.transportSelect{
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
 
 .title{
   width: 704px;
@@ -136,47 +103,25 @@ p{
 }
 
 .title input{
-  width: 80%;
   margin-left: 30px;
-  text-align: left;
 }
 
 .content{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
   width: 704px;
   height: 179px;
-  padding: 0 25px;
-
 }
 
-.content label{
-  margin:0;
-  padding-top: 20px;
+.content input{
+  width: 100%;
 }
 
 .searchIcon{
   color: var(--color-orange);
-  font-size: 14px;
 }
 
 .calendarIcon{
   color: var(--color-orange);
-  font-size: 16px;
-}
-
-textarea{
-  font-family: var(--font-family-pretendard-regular);
-  font-weight: 300;
-  font-size:14px;
-  line-height: 17px;
-  color: var(--color-black);
-  border: none;
-  margin: 10px 0 0 0;
-
-  text-align: left;
-  overflow: hidden;
-
 }

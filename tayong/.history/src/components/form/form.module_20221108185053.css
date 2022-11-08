@@ -174,9 +174,10 @@ textarea{
   line-height: 17px;
   color: var(--color-black);
   border: none;
-  margin: 10px 0 0 0;
+  margin: 20 0 0 0 ;
 
   text-align: left;
+  background-color: lightgray;
   overflow: hidden;
 
 }

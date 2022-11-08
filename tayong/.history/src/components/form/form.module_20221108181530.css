@@ -37,19 +37,11 @@ input{
   text-align: center;
   height: 80%;
 
-  /* background-color: aquamarine; */
+  background-color: aquamarine;
 
   overflow: hidden;
   white-space: nowrap;
 
-}
-
-p{
-  font-family: var(--font-family-pretendard-regular);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: var(--color-black);
 }
 
 .locationContainer, .infoContainer, .title{
@@ -68,7 +60,7 @@ p{
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 12px;
+  padding: 0 20px;
 }
 
 .locationContainer {
@@ -106,10 +98,8 @@ p{
 }
 
 .recruitment input{
-  width: 20px;
-  margin-left: 3px;
-  padding-right: 0;
-  margin-right: 0;
+  width: 30%;
+  margin-left: 6px;
 }
 
 .transport{
@@ -144,17 +134,14 @@ p{
 .content{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
   width: 704px;
   height: 179px;
-  padding: 0 25px;
-
 }
 
-.content label{
-  margin:0;
-  padding-top: 20px;
+.content input{
+  width: 100%;
+  text-align: left;
 }
 
 .searchIcon{
@@ -165,18 +152,4 @@ p{
 .calendarIcon{
   color: var(--color-orange);
   font-size: 16px;
-}
-
-textarea{
-  font-family: var(--font-family-pretendard-regular);
-  font-weight: 300;
-  font-size:14px;
-  line-height: 17px;
-  color: var(--color-black);
-  border: none;
-  margin: 10px 0 0 0;
-
-  text-align: left;
-  overflow: hidden;
-
 }

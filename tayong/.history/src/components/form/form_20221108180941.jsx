@@ -30,7 +30,6 @@ function Form(props) {
           <div className={styles.recruitment}>
             <label htmlFor='recruitment'>모집인원</label>
             <input type="text" id='recruitment' name='recruitment' maxLength='1'/>
-            <p>명</p>
           </div>
 
           <div className={styles.transport}>
@@ -50,7 +49,7 @@ function Form(props) {
         
         <div className={styles.content}>
           <label htmlFor='content'>내용</label>
-          <textarea cols="88" rows="6" maxLength="300" name='content'></textarea>
+          <input type="text" id='content' name='content' />
         </div>
 
       </form>

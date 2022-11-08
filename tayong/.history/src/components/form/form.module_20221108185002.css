@@ -144,12 +144,19 @@ p{
 .content{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
   width: 704px;
   height: 179px;
   padding: 0 25px;
 
+}
+
+.content textarea{
+  margin-top: 10px;
+  text-align: left;
+  background-color: lightgray;
+  overflow: hidden;
+  resize: none;
 }
 
 .content label{
@@ -174,9 +181,5 @@ textarea{
   line-height: 17px;
   color: var(--color-black);
   border: none;
-  margin: 10px 0 0 0;
-
-  text-align: left;
-  overflow: hidden;
-
+  margin: 0;
 }

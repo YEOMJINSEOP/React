@@ -50,7 +50,7 @@ function Form(props) {
         
         <div className={styles.content}>
           <label htmlFor='content'>내용</label>
-          <textarea cols="88" rows="6" maxLength="300" name='content'></textarea>
+          <textarea rows="52" cols="7" name='content' wrap='virtual'></textarea>
         </div>
 
       </form>
