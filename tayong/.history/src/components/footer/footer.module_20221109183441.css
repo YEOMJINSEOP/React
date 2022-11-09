@@ -8,6 +8,7 @@
   bottom: 0;
 
   background-color: var(--color-orange);
+  color: var(--color-white);
 
   display: flex;
   flex-direction: row;
@@ -16,9 +17,8 @@
   font-size: var(--font-micro)
 }
 
-.contract, .name, .divider{
+p{
   font-family: var(--font-famiy-pretendard-regular);
-  color: var(--color-white);
   font-size: 13px;
 }
 
@@ -30,3 +30,6 @@
   cursor: pointer;
 }
 
+.name{
+  color: var(--color-white);
+}

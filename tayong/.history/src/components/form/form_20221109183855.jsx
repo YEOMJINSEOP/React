@@ -55,7 +55,7 @@ function Form(props) {
       </form>
       <div className={styles.btns}>
           <button className={styles.btn_backToList}>목록으로</button>
-          <button className={styles.btn_submit} type='submit'>등록하기</button>
+          <button className={styles.btn} type='submit'>등록하기</button>
         </div>
     </div>
   );
