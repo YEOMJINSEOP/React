@@ -26,7 +26,6 @@ function MeetList(props) {
       setMeetList(data);
     });
   }, [])
-
   
   return (
     <div className={styles.meetList}>
@@ -52,9 +51,7 @@ function MeetList(props) {
           />    
         </div>    
       </div>
-      <button className={styles.btn_create} onClick={(e) => {
-        navigate('/create');
-      }}>모집하기</button>
+      <button className={styles.btn_create} onClick={navigate(`/create`)}>모집하기</button>
       <ul className={styles.list}>
         {meetList.map((item) => {
           if(item.departure === depLoc && item.arrival === arrLoc){

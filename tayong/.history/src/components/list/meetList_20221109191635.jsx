@@ -3,13 +3,11 @@ import { useState } from 'react';
 import {v4 as uuidV4} from 'uuid';
 import styles from './meetList.module.css';
 import { FaArrowRight } from 'react-icons/fa';
-import {useNavigate, useParams } from 'react-router-dom';
+import {useParams } from 'react-router-dom';
 import Meet from '../\bmeet/meet';
 
 
 function MeetList(props) {
-
-  const navigate = useNavigate();
 
   const [meetList, setMeetList] = useState([]);
   let param = useParams();
@@ -26,7 +24,6 @@ function MeetList(props) {
       setMeetList(data);
     });
   }, [])
-
   
   return (
     <div className={styles.meetList}>
@@ -52,9 +49,6 @@ function MeetList(props) {
           />    
         </div>    
       </div>
-      <button className={styles.btn_create} onClick={(e) => {
-        navigate('/create');
-      }}>모집하기</button>
       <ul className={styles.list}>
         {meetList.map((item) => {
           if(item.departure === depLoc && item.arrival === arrLoc){

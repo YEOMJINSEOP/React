@@ -160,12 +160,6 @@ label{
     row-gap:  20px;
   }
 
-  .btn_create{
-    position: fixed;
-    top: 215px;
-    right: 41.9%;
-  }
-
 }
 
 @media screen and (max-width: 768px){

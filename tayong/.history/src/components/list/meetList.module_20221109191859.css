@@ -28,7 +28,7 @@ label{
 
 .location{
   position: absolute;
-  top: 10%;
+  top: 75px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -74,20 +74,8 @@ label{
 
 .btn_create{
   position: absolute;
-  top: 16.6%;
-  right: 10%;
-
-  width: 134px;
-  height: 40px;
-  border-radius: 8px;
-  background-color: var(--color-orange);
-
-  font-family: var(--font-family-pretendard-regular);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  
-  color: var(--color-white);
+  top: 125px;
+  right: 20%;
 }
 
 
@@ -158,12 +146,6 @@ label{
   
     column-gap: 20px;
     row-gap:  20px;
-  }
-
-  .btn_create{
-    position: fixed;
-    top: 215px;
-    right: 41.9%;
   }
 
 }

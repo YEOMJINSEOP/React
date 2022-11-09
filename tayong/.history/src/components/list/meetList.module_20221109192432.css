@@ -161,9 +161,9 @@ label{
   }
 
   .btn_create{
-    position: fixed;
-    top: 215px;
-    right: 41.9%;
+    position: absolute;
+    top: 25%;
+    right: 40%;
   }
 
 }
