@@ -84,7 +84,7 @@ function Form(props) {
         
         <div className={styles.content}>
           <label htmlFor='content'>내용</label>
-          <textarea cols="88" rows="6" maxLength="300" name='content' onChange={(e) => {setContent(e.target.value)}}></textarea>
+          <textarea cols="88" rows="6" maxLength="300" name='content' onChange={(e) => {setTransport(e.target.value)}}></textarea>
         </div>
       </form>
       <div className={styles.btns}>

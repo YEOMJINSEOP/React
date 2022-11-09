@@ -27,8 +27,6 @@ function Form(props) {
       content: content
     }
 
-    console.log(data);
-
     axios
     .post("url", data)
     .then(
@@ -69,7 +67,6 @@ function Form(props) {
           <div className={styles.transport}>
             <label htmlFor='transport'>이동수단</label>
             <select className={styles.transportSelect} onChange={(e) => {setTransport(e.target.value)}}>
-              <option>선택</option>
               <option>택시</option>
               <option>자가용</option>
             </select>
@@ -84,7 +81,7 @@ function Form(props) {
         
         <div className={styles.content}>
           <label htmlFor='content'>내용</label>
-          <textarea cols="88" rows="6" maxLength="300" name='content' onChange={(e) => {setContent(e.target.value)}}></textarea>
+          <textarea cols="88" rows="6" maxLength="300" name='content' onChange={(e) => {setTransport(e.target.value)}}></textarea>
         </div>
       </form>
       <div className={styles.btns}>
