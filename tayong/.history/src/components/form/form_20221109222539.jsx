@@ -21,7 +21,7 @@ function Form(props) {
     e.preventDefault();
 
     if(departure == "" || arrival == "" || remainingTime == "" || recruitment == "" || transport == "" || title == "" || content == ""){
-      console.warn('입력되지 않은 항목이 있습니다.');
+      console.error('입력되지 않은 항목이 존재합니다.');
       window.alert('입력되지 않은 항목이 있습니다.');
       return
     }

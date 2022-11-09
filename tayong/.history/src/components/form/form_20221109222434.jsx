@@ -20,8 +20,7 @@ function Form(props) {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    if(departure == "" || arrival == "" || remainingTime == "" || recruitment == "" || transport == "" || title == "" || content == ""){
-      console.warn('입력되지 않은 항목이 있습니다.');
+    if({departure} == "" || {arrival} == "" || {remainingTime} == "" || {recruitment} == "" || {transport} == "" || {title} == "" || {content} == ""){
       window.alert('입력되지 않은 항목이 있습니다.');
       return
     }
