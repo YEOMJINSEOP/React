@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import styles from './arrival.module.css';
+import React, { useState } from 'react';
+import styles from './departure.module.css';
 
 import { FaSearch } from 'react-icons/fa';
-
-function Arrival({onSet}) {
+import { useEffect } from 'react';
+function Departure({onSet}) {
 
   const [location, setLocation] = useState([]);
   const [inputStr, setInputStr] = useState('');
@@ -25,32 +25,33 @@ function Arrival({onSet}) {
   const autoComplete = (e) => {
     setInputStr(e.target.innerText);
     onSet(e.target.innerText);
-    e.target.parentNode.style.visibility = 'hidden';
+    console.log(e.target.innerText);
   }
+
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className={styles.arrival}>
-        <div className={styles.info}><span className={styles.ocos}>"</span><span>도착지</span><span className={styles.ocos}>"</span>를 입력해 주세요</div>
-          
-          <label htmlFor='arrival'></label>
-          <div className={styles.inputBox}>
-            <input
-                className={styles.input}
-                type="text"
-                id='arrival'
-                name='arrival'
-                value = {inputStr}
-                onChange = {
-                  (e) => {
-                    setInputStr(e.target.value);
-                  }
+      <div className={styles.departure}>
+        <div className={styles.info}><span className={styles.ocos}>"</span><span>출발지</span><span className={styles.ocos}>"</span>를 입력해 주세요</div>
+        
+        <label htmlFor='departure'></label>
+        <div className={styles.inputBox}>
+          <input
+              className={styles.input}
+              type="text"
+              id='departure'
+              name='departure'
+              value = {inputStr}
+              onChange = {
+                (e) => {
+                  setInputStr(e.target.value);
                 }
-            />
-            <FaSearch className={styles.searchIcon}/>
-          </div>
+              }
+          />
+          <FaSearch className={styles.searchIcon}/>
+        </div>
 
-          <div className={styles.searchDropDown}>
+        <div className={styles.searchDropDown}>
               <ul>
                 {location.filter((loc) => {
                   if(inputStr == ""){return}
@@ -65,10 +66,11 @@ function Arrival({onSet}) {
                 )
                 }
               </ul>
-          </div>
-      </div>
+        </div>
+
+      </div>      
     </form>
   );
 }
 
-export default Arrival;
+export default Departure;

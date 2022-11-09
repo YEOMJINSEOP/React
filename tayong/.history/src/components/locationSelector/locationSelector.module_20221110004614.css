@@ -21,7 +21,7 @@
 
 .arrow{
 
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   align-items:center;
   font-size: 30px;
@@ -64,8 +64,8 @@
   padding: 0;
 }
 
-.submitBtn {
+.button {
   position: fixed;
-  top: 75%;
+  bottom: 15%;
 }
 }

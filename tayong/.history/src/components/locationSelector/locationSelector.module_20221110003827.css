@@ -13,6 +13,8 @@
 }
 
 .location{
+  position: fixed;
+  top: 35%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,11 +22,14 @@
 }
 
 .arrow{
+  position: fixed;
 
-  margin-top: 80px;
+  top: 50%;
+  left: 46%;
   display: flex;
   align-items:center;
-  font-size: 30px;
+  padding-top: 2.8rem;
+  font-size: 100px;
   color: var(--color-orange);
 }
 
@@ -49,23 +54,5 @@
 
 @media screen and (max-width: 768px){
   
-.location{
-  position: fixed;
-  top: 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
 
-.arrow{
-  margin: 20px 0;
-  padding: 0;
-}
-
-.submitBtn {
-  position: fixed;
-  top: 75%;
-}
 }
