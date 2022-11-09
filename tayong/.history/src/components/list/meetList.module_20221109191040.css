@@ -23,6 +23,7 @@ label{
   font-family: var(--font-family-pretendard-regular);
   font-weight: var(--font-pretendard-medium);
   font-size: 14px;
+  text-align: center;
 }
 
 
@@ -38,12 +39,10 @@ label{
 .locationDeparture, .locationArrival{
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: var(--font-semi-small);
   color: var(--color-orange);
   font-weight: var(--weight-bold);
   margin: 1rem;
-
 }
 
 
