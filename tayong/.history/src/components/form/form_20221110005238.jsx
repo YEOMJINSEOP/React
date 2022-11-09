@@ -49,7 +49,8 @@ function Form(props) {
   }
 
   const backToListHandler = (e) => {
-    navigate(-1);
+    e.preventDefault();
+    navigate.pop();
   }
   
   return (

@@ -49,7 +49,7 @@ function Form(props) {
   }
 
   const backToListHandler = (e) => {
-    navigate(-1);
+    navigate.pop();
   }
   
   return (
