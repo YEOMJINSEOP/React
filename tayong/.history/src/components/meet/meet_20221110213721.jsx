@@ -16,7 +16,7 @@ function Meet(props) {
   }
 
   return (
-  <li className={styles.meet}>
+  <li className={styles.meet}}>
     <div className={styles.infoImage}>
       <img 
       src= {selectImg()}
