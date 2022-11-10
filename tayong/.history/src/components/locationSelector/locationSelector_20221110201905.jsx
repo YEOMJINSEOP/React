@@ -27,11 +27,11 @@ function LocationSelector(props) {
 
   const submitHandler = () => {
     if(departure === ""){
-      alert('지정된 출발지로 설정하세요');
+      alert('출발지를 입력하세요');
       return
     }
     else if(arrival === ""){
-      alert('지정된 도착지로 설정하세요');
+      alert('도착지를 입력하세요');
       return
     }
     navigate(`/list/${departure}/${arrival}`);

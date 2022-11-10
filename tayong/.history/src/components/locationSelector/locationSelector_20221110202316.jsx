@@ -19,6 +19,7 @@ function LocationSelector(props) {
 
   const departureHandler = (departure) => {
     setDeparture(departure);
+    console.log("departure", departure);
   };
 
   const arrivalHandler = (arrival) => {
@@ -26,6 +27,8 @@ function LocationSelector(props) {
   };
 
   const submitHandler = () => {
+    console.log("departure:", departure);
+    console.log("arrival", arrival)
     if(departure === ""){
       alert('지정된 출발지로 설정하세요');
       return

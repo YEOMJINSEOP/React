@@ -18,9 +18,6 @@ function Departure({onSet}) {
     })
   }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
 
   const autoComplete = (e) => {
     setInputStr(e.target.innerText);

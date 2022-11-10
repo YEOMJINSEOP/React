@@ -25,18 +25,6 @@ function LocationSelector(props) {
     setArrival(arrival);
   };
 
-  const submitHandler = () => {
-    if(departure === ""){
-      alert('지정된 출발지로 설정하세요');
-      return
-    }
-    else if(arrival === ""){
-      alert('지정된 도착지로 설정하세요');
-      return
-    }
-    navigate(`/list/${departure}/${arrival}`);
-  }
-
   return (
     <div className={styles.locationSelector}>
       <div className={styles.location}>
@@ -46,7 +34,7 @@ function LocationSelector(props) {
       </div>
       <button 
         className={styles.submitBtn}
-        onClick={submitHandler}
+        onClick={() => {navigate(`/list/${departure}/${arrival}`);}}
           >
         같이 이동할 사람 찾기
       </button>

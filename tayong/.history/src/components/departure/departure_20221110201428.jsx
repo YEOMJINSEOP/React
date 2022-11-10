@@ -18,9 +18,6 @@ function Departure({onSet}) {
     })
   }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
 
   const autoComplete = (e) => {
     setInputStr(e.target.innerText);
@@ -30,7 +27,7 @@ function Departure({onSet}) {
 
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <div className={styles.departure}>
         <div className={styles.info}><span className={styles.ocos}>"</span><span>출발지</span><span className={styles.ocos}>"</span>를 입력해 주세요</div>
         
