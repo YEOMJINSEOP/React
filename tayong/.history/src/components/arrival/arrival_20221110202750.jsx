@@ -31,6 +31,7 @@ function Arrival({onSet}) {
   return (
     <form onSubmit={handleSubmit}>
       <div className={styles.arrival}>     
+          <label htmlFor='arrival'></label>
           <div className={styles.inputBox}>
             <input
                 className={styles.input}

@@ -37,8 +37,8 @@
   font-family: var(--font-family-leferibase-bold);
 }
 
-.info{
-  margin-bottom: 1;
+.departureInput, .arrivalInput{
+  margin-top: 10px;
 }
 
 
