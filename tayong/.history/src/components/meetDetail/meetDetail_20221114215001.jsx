@@ -15,9 +15,7 @@ function MeetDetail(props) {
 
   const url = "";
   axios.get(url)
-  .then(
-    console.log("데이터를 받아왔습니다🎉")
-  );
+  .then()
 
 
   return (

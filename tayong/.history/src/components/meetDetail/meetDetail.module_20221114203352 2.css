@@ -12,7 +12,7 @@
   justify-content: center;
 }
 
-.departure, .arrival, .remainingTime, .recruitment, .transport, .title, .content, .user{
+.departure, .arrival, .remainingTime, .recruitment, .transport, .title, .content{
   border: none;
   outline: none;
   background: var(--color-white);
@@ -28,7 +28,7 @@
 }
 
 label{
-  width: 60px;
+  width: 42px;
   height: 14px;
   margin: 0;
 }
@@ -37,29 +37,6 @@ label{
   width: 596px;
   height: 100px;
   border-radius: 10px;
-}
-
-.locAndUserContainer{
-  width: 596px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.departure{
-  width: 288px;
-  height: 53px;
-}
-
-.arrival{
-  width: 288px;
-  height: 53px;
-  margin-top: 20px;
-}
-
-.user{
-  width: 288px;
-  height: 126px;
 }
 
 .title{
@@ -82,7 +59,6 @@ label{
   margin-left: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .recruitment input{
@@ -95,10 +71,6 @@ label{
 .remainingTime {
   width: 288px;
   height: 53px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 

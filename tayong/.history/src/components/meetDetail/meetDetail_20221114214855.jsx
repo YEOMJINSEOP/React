@@ -15,9 +15,7 @@ function MeetDetail(props) {
 
   const url = "";
   axios.get(url)
-  .then(
-    console.log("데이터를 받아왔습니다🎉")
-  );
+  .then()
 
 
   return (
@@ -34,7 +32,9 @@ function MeetDetail(props) {
               <input type="text" id='arrival' name='arrival' maxLength='12'/>
             </div>
           </div>
-          <div className={styles.user}></div>
+          <div className={styles.user}>
+
+          </div>
         </div>
         <input className={styles.title} type="text" id='title' name='title'/>
         <div className={styles.info}>

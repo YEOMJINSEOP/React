@@ -12,7 +12,7 @@
   justify-content: center;
 }
 
-.departure, .arrival, .remainingTime, .recruitment, .transport, .title, .content, .user{
+.departure, .arrival, .remainingTime, .recruitment, .transport, .title, .content{
   border: none;
   outline: none;
   background: var(--color-white);
@@ -43,6 +43,7 @@ label{
   width: 596px;
   margin-top: 20px;
   display: flex;
+  background-color: lightblue;
   justify-content: space-between;
 }
 

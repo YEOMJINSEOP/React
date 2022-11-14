@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './meetDetail.module.css'
 import { FiCalendar} from 'react-icons/fi';
 import axios from 'axios';
@@ -15,9 +15,7 @@ function MeetDetail(props) {
 
   const url = "";
   axios.get(url)
-  .then(
-    console.log("데이터를 받아왔습니다🎉")
-  );
+  .then()
 
 
   return (
@@ -26,15 +24,13 @@ function MeetDetail(props) {
         <div className={styles.locAndUserContainer}>
           <div className={styles.location}>
             <div className={styles.departure}>
-              <label htmlFor='departure'>출발</label>
+              <label htmlFor='departure'>출발지</label>
               <input type="text" id='departure' name='departure' maxLength='12'/>
             </div>
-            <div className={styles.arrival}>
-              <label htmlFor='arrival'>도착</label>
-              <input type="text" id='arrival' name='arrival' maxLength='12'/>
-            </div>
           </div>
-          <div className={styles.user}></div>
+          <div className={styles.user}>
+
+          </div>
         </div>
         <input className={styles.title} type="text" id='title' name='title'/>
         <div className={styles.info}>

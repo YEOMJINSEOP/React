@@ -12,7 +12,7 @@
   justify-content: center;
 }
 
-.departure, .arrival, .remainingTime, .recruitment, .transport, .title, .content, .user{
+.departure, .arrival, .remainingTime, .recruitment, .transport, .title, .content{
   border: none;
   outline: none;
   background: var(--color-white);
@@ -40,10 +40,10 @@ label{
 }
 
 .locAndUserContainer{
-  width: 596px;
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  background-color: lightblue;
+  justify-content: space-around;
 }
 
 .departure{
@@ -54,7 +54,6 @@ label{
 .arrival{
   width: 288px;
   height: 53px;
-  margin-top: 20px;
 }
 
 .user{
