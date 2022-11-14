@@ -39,21 +39,21 @@ function MeetDetail(props) {
           </div>
           <div className={styles.user}></div>
         </div>
-        <input className={styles.title} type="text" id='title' name='title' readOnly/>
+        <input className={styles.title} type="text" id='title' name='title'/>
         <div className={styles.info}>
           <div className={styles.recruitment}>
             <label htmlFor='recruitment'>모집인원</label>
-            <input type="text" id='recruitment' name='recruitment' readOnly/>
+            <input type="text" id='recruitment' name='recruitment' maxLength='1'/>
             <p>명</p>
           </div>
           <div className={styles.remainingTime}>
             <label htmlFor='remainingTime'>마감시간</label>
-            <input type="text" id='remainingTime' name='remainingTime' readOnly/>
+            <input type="text" id='remainingTime' name='remainingTime'/>
           </div>
         </div>
 
         <div className={styles.content}>
-            <textarea cols="88" rows="6" maxLength="300" name='content' readOnly></textarea>
+            <textarea cols="88" rows="6" maxLength="300" name='content'></textarea>
         </div>
 
         <div className={styles.btns}>

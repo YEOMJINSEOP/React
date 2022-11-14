@@ -42,8 +42,8 @@ function Form(props) {
     .post("url", data)
     .then(
       (res) =>{
-        console.log(res);
-        console.log("데이터 전송이 완료되었습니다🎉");
+        console.log(res)
+        console.log("데이터 전송이 완료되었습니다🎉")
       } 
       );
     
