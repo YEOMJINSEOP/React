@@ -1,13 +1,12 @@
 import React from 'react';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
-import MeetDetail from '../components/meetDetail/meetDetail'
-
+import Detail from '../components/Meetdetail/detail';
 function Detail(props) {
   return (
     <>
       <Header/>
-      <MeetDetail/>
+      <Detail/>
       <Footer/>
     </>
   );
