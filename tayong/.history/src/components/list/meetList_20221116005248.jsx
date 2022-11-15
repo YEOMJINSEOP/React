@@ -19,12 +19,9 @@ function MeetList(props) {
   console.log(param['*'].split('/'));
 
   const onClickHandler = (e) => {
-    if(e.target.type != undefined){
-      console.log('공백을 누르셨네요😅')
-      return
-    } else{
-      navigate('/detail');
-    }
+    console.log('you clicked meet!😎');
+    console.log(e.target.value);
+    console.log(e.target.type != undefined); // 공백을 누르면
   }
 
   useEffect(() => {

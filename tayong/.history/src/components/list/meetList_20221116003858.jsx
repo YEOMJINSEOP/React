@@ -18,13 +18,8 @@ function MeetList(props) {
   const arrLoc = param['*'].split('/')[1]
   console.log(param['*'].split('/'));
 
-  const onClickHandler = (e) => {
-    if(e.target.type != undefined){
-      console.log('공백을 누르셨네요😅')
-      return
-    } else{
-      navigate('/detail');
-    }
+  const onClickHandler = () => {
+    navigate('/detail');
   }
 
   useEffect(() => {
@@ -64,7 +59,7 @@ function MeetList(props) {
       <button className={styles.btn_create} onClick={(e) => {
         navigate('/create');
       }}>모집하기</button>
-      <ul className={styles.list} onClick={onClickHandler}>
+      <ul className={styles.list}>
         {meetList.map((item) => {
           if(item.departure === depLoc && item.arrival === arrLoc){
             return (
@@ -76,6 +71,7 @@ function MeetList(props) {
                 recruitment={item.recruitment}
                 remainingTime={item.remainingTime}
                 transport={item.transport}
+                onClick={onClickHandler}
                />
               ) 
           }
