@@ -18,6 +18,9 @@ function MeetList(props) {
   const arrLoc = param['*'].split('/')[1]
   console.log(param['*'].split('/'));
 
+  const onClickHandler = (e) => {
+    console.log('Meet Click 🥕')
+  }
 
   useEffect(() => {
     fetch('data/meet.json')
@@ -63,12 +66,12 @@ function MeetList(props) {
               <Meet
                 key = {item.id}
                 id={item.id}
-                userId={item.userId}
                 departure={item.departure}
                 arrival={item.arrival}
                 recruitment={item.recruitment}
                 remainingTime={item.remainingTime}
                 transport={item.transport}
+                onClick={onClickHandler}
                />
               ) 
           }

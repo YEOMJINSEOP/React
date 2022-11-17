@@ -2,7 +2,7 @@
 
 
 .container{
-  position: absolute;
+  position: fixed;
   top: 12%;
 
   width: 100%;
@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
 
-  /* background-color: lightblue; */
+  background-color: lightblue;
 }
 
 .departure, .arrival, .remainingTime, .recruitment, .transport, .title, .content, .user{

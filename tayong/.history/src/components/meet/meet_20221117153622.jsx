@@ -21,7 +21,8 @@ function Meet({id, userId, departure, arrival, recruitment, remainingTime, trans
 
   const onClickHandler = (e) => {
     console.log('Meet Click 🥕');
-    navigate(`/detail/${id}`);
+    navigate(`/detail/userId?=${userId}/departure?=${departure}/arrival?=${arrival}/transport?=${transport}/id?=${id}`);
+    return <Detail/>
   }
 
   return (

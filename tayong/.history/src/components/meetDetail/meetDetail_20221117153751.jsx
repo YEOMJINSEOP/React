@@ -20,7 +20,6 @@ function MeetDetail(props) {
   const imgTaxi = 'https://img.freepik.com/free-photo/taxi-sign-roof-top-car_74190-1728.jpg?w=1800&t=st=1667398413~exp=1667399013~hmac=efcccc4afa78711c2ff1407418bf496be6c0ddf73fe37c1c3ecf06f936d5bc24'; 
 
   let param = useParams();
-  console.log(param['*']);
 
   // const url = './meet.json';
   // axios.get(url)
