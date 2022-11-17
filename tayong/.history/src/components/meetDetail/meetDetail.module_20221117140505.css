@@ -49,21 +49,12 @@ label{
 .departure{
   width: 288px;
   height: 53px;
-
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .arrival{
   width: 288px;
   height: 53px;
   margin-top: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .user{
@@ -119,7 +110,6 @@ label{
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  font-size: 40px;
 }
 
 .content{

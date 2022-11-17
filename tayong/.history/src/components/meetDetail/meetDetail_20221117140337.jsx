@@ -71,7 +71,7 @@ function MeetDetail(props) {
           </div>
           <div className={styles.user}>
             <div className={styles.userInfo}>
-              <div className={styles.userAvatar}>🐯</div>
+              <div className={styles.userAvatar}>img</div>
               <p>{userId}</p>
             </div>
           </div>

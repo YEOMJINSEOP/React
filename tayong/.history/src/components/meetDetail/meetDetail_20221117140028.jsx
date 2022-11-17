@@ -70,10 +70,7 @@ function MeetDetail(props) {
             </div>
           </div>
           <div className={styles.user}>
-            <div className={styles.userInfo}>
-              <div className={styles.userAvatar}>🐯</div>
-              <p>{userId}</p>
-            </div>
+            <p>{userId}</p>
           </div>
         </div>
         <input className={styles.title} type="text" id='title' name='title' value={title} readOnly/>

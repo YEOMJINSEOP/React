@@ -23,7 +23,6 @@ function MeetList(props) {
       console.log('공백을 누르셨네요😅')
       return
     } else{
-      console.log(e.target);
       // navigate('/detail');
     }
   }

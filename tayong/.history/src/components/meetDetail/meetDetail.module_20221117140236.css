@@ -49,21 +49,12 @@ label{
 .departure{
   width: 288px;
   height: 53px;
-
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .arrival{
   width: 288px;
   height: 53px;
   margin-top: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .user{
@@ -110,18 +101,9 @@ label{
   align-items: center;
 }
 
-
-.userInfo{
-  margin-left: 20px;
-}
 .userAvatar{
-  background-color: lightblue;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  font-size: 40px;
+  background-color: blue;
 }
-
 .content{
   width: 596px;
   height: 114px;
