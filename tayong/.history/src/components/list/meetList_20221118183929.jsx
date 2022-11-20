@@ -3,7 +3,7 @@ import { useState } from 'react';
 import {v4 as uuidV4} from 'uuid';
 import styles from './meetList.module.css';
 import { FaArrowRight } from 'react-icons/fa';
-import {json, useNavigate, useParams } from 'react-router-dom';
+import {useNavigate, useParams } from 'react-router-dom';
 import Meet from '../\bmeet/meet';
 
 
@@ -20,16 +20,11 @@ function MeetList(props) {
 
 
   useEffect(() => {
-    fetch('/list', {
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
+    fetch('https://vnkzpazvt9.execute-api.ap-northeast-2.amazonaws.com/dev/list')
     .then(res => res.json())
     .then(data => {
       console.log('모임 데이터를 받아왔습니다🥕');
-      console.log(data);
-      console.log(JSON.parse(data['body']));
+      setMeetList(data);
     });
   }, [])
 

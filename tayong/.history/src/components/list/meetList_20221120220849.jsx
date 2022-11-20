@@ -29,7 +29,7 @@ function MeetList(props) {
     .then(data => {
       console.log('모임 데이터를 받아왔습니다🥕');
       console.log(data);
-      console.log(JSON.parse(data['body']));
+      JSON.parse(data['body']);
     });
   }, [])
 
