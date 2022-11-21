@@ -12,9 +12,9 @@
 
 }
 
-.logo{
-  font-family: 'LeferiPoint-BlackA';
-  font-size: 50px;
+.title{
+  font-family: var('Pretendard-Regular');
+  font-size: 36px;
   font-weight: bold;
   color: var(--color-orange);
 

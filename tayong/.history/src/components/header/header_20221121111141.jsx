@@ -15,7 +15,7 @@ function Header(props) {
             navigate('/login')
           }}>로그인</button>
           <button className={styles.btn} onClick={() => {
-            navigate('/signup')
+            navigate('/singup')
           }}>회원가입</button>
         </div>  
       </nav>

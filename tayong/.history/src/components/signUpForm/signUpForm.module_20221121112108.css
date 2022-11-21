@@ -12,9 +12,9 @@
 
 }
 
-.logo{
-  font-family: 'LeferiPoint-BlackA';
-  font-size: 50px;
+.title{
+  font-family: var('Pretendard-Regular');
+  font-size: 36px;
   font-weight: bold;
   color: var(--color-orange);
 
@@ -29,7 +29,7 @@
 }
 
 .email input{
-  width: 390px;
+  width: 302px;
   height: 48px;
 
   border: 1px solid #CCCCCC;
@@ -38,6 +38,11 @@
   margin-top: 10px;
   padding-left: 15px;
   text-align: left;
+}
+
+.authBtn{
+  width: 79px;
+  background-color: var(--color-orange);
 }
 
 .password{

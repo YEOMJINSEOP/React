@@ -1,9 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import styles from './loginForm.module.css';
 
-function LoginForm(props) {
-  const navigate = useNavigate();
+function SignUpForm(props) {
   return (
     <>
       <div className={styles.logInContainer}>
@@ -23,13 +20,11 @@ function LoginForm(props) {
 
         <div className={styles.extraFunc}>
           <p>아이디/비밀번호 찾기</p>
-          <p onClick={() => {
-            navigate('/signup');
-          }}>회원가입</p>
+          <p>회원가입</p>
         </div>
       </div>
     </>
   );
 }
 
-export default LoginForm;
+export default SignUpForm;

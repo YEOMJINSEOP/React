@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from './loginForm.module.css';
 
 function LoginForm(props) {
-  const navigate = useNavigate();
+  const navigate = useNavigate;
   return (
     <>
       <div className={styles.logInContainer}>

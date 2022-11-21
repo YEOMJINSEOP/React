@@ -55,9 +55,6 @@
   border-radius: 6px;
 
   margin-top: 10px;
-
-  padding-left: 15px;
-  text-align: left;
 }
 
 label {
@@ -83,8 +80,6 @@ label {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-
-  cursor: pointer;
 }
 
 .extraFunc {
@@ -101,9 +96,4 @@ label {
 
   width: 390px;
   margin-top: 12px;
-
-}
-
-.extraFunc p{
-  cursor:pointer;
 }

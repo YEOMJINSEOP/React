@@ -12,9 +12,9 @@
 
 }
 
-.logo{
+.title{
   font-family: 'LeferiPoint-BlackA';
-  font-size: 50px;
+  font-size: 36px;
   font-weight: bold;
   color: var(--color-orange);
 
