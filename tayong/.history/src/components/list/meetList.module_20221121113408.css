@@ -21,13 +21,15 @@
 
 .meetListLabel {
   font-family: var(--font-family-pretendard-regular);
-  font-weight: 500;
+  font-weight: var(--font-pretendard-medium);
   font-size: 14px;
-  line-height: 17px;
-
-  color: var(--color-orange);
   padding-left: 70px;
 
+  font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
 }
 
 

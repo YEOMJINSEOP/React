@@ -57,7 +57,7 @@ function MeetList(props) {
         </div>
       <FaArrowRight className={styles.locationArrow}/>
       <div className={styles.locationArrival}>
-        <label className={styles.meetListLabel} htmlFor='arrival'>도착</label>
+        <label {styles.meetListLabel} htmlFor='arrival'>도착</label>
           <input
               readOnly={true}
               type="text"

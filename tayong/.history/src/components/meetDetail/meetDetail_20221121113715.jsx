@@ -3,11 +3,9 @@ import styles from './meetDetail.module.css'
 import { FiCalendar} from 'react-icons/fi';
 import axios from 'axios';
 import { useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 function MeetDetail(props) {
-
-  const navigate = useNavigate();
 
   const [departure, setDeparture] = useState("");
   const [arrival, setArrival] = useState("");
@@ -102,9 +100,7 @@ function MeetDetail(props) {
         <div className={styles.btns}>
           <button className={styles.btn_join}>참여하기</button>
           <button className={styles.btn_chat}>채팅하기</button>
-          <button className={styles.btn_backToList} onClick={() => {
-            navigate(-1);
-          }}>목록으로</button>
+          <button className={styles.btn_backToList}>목록으로</button>
         </div>
     </div>
   );

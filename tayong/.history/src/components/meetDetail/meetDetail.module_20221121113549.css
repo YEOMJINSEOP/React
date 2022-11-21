@@ -33,13 +33,6 @@
   width: 60px;
   height: 14px;
   margin: 0;
-
-  font-family: var(--font-family-pretendard-regular);
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 17px;
-
-  color: var(--color-orange);
 }
 
 .imgTransport{
