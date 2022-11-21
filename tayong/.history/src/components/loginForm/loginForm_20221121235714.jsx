@@ -15,10 +15,8 @@ function LoginForm(props) {
     password: password
   }
 
-  console.log(userData);
-
   axios
-  .post("", userData)
+  .post("url", userData)
   .then(
     (res) => {
       console.log(res);

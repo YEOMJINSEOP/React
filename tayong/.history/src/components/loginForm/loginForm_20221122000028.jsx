@@ -18,7 +18,7 @@ function LoginForm(props) {
   console.log(userData);
 
   axios
-  .post("", userData)
+  .post("url", userData)
   .then(
     (res) => {
       console.log(res);
@@ -42,7 +42,7 @@ function LoginForm(props) {
           <input type="password" id="password" name="password" onChange={(e) => {setPassword(e.target.value)}} required />
         </div>
         
-        <input className={styles.submitBtn} type="submit" value="로그인" />
+        <button className={styles.submitBtn} type="submit" value="로그인" />
 
         <div className={styles.extraFunc}>
           <p>아이디/비밀번호 찾기</p>

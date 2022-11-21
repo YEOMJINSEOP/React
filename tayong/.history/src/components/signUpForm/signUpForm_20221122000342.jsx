@@ -21,7 +21,7 @@ function SignUpForm(props) {
         </div>
 
         <div className={styles.password}>
-          <label htmlFor="passwordCheck">비밀번호 확인</label>
+          <label htmlFor="password">비밀번호 확인</label>
           <input type="password" id="passwordCheck" name="passwordCheck" required />
         </div>
 

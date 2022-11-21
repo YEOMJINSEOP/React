@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -14,17 +13,6 @@ function LoginForm(props) {
     email: email,
     password: password
   }
-
-  console.log(userData);
-
-  axios
-  .post("", userData)
-  .then(
-    (res) => {
-      console.log(res);
-      console.log("로그인 데이터 전송이 완료되었습니다");
-    }
-  )
 
 
   return (
