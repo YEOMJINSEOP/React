@@ -1,0 +1,10 @@
+.nameCard{
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileImage{
+  width: 100px;
+  height: 100px;
+}

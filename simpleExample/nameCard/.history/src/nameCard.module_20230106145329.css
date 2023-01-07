@@ -1,0 +1,17 @@
+.nameCard{
+  width: 500px;
+  height: 300px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImage{
+  box-sizing: border-box;
+  background-color: lightgray;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  padding-top: 40px;
+}
