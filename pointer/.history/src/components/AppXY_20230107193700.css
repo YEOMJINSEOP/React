@@ -1,0 +1,10 @@
+* {
+  background-color: lightgoldenrodyellow;
+}
+
+.pointer {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: lightcoral;
+}
