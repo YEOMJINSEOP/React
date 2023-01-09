@@ -1,0 +1,21 @@
+
+* {
+  text-align: center;
+}
+
+p {
+  font-weight: bolder;
+}
+
+li{
+  list-style: none;
+  background-color: lightskyblue;
+  border: 1px solid lightgray;
+  margin-bottom: 4px;
+}
+button {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
