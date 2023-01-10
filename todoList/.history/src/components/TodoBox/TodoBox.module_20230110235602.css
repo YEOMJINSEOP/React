@@ -1,0 +1,17 @@
+button {
+  outline: none;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.todoBox{
+  background-color: #28345c;
+  width: 400px;
+  height: 300px;
+}
+
+.todoList{
+  background-color: #7c8cbc;
+}
+

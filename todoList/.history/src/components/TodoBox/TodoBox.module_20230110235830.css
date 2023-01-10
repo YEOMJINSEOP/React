@@ -1,0 +1,23 @@
+button {
+  outline: none;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.todoBox{
+  background-color: #28345c;
+  width: 400px;
+  height: 400px;
+}
+
+.todoList{
+  background-color: #485da4;
+}
+

@@ -1,0 +1,6 @@
+.todo {
+  background-color: navy;
+  color: white;
+  display: flex;
+  align-items: center;
+}
