@@ -36,6 +36,8 @@ header {
 .todoInput{
   width: 90%;
   height: 25px;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 
 .todoInput input{
@@ -43,8 +45,8 @@ header {
   height: 100%;
   outline: none;
   border:none;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 
 .todoInput button{
@@ -52,8 +54,8 @@ header {
   height: 100%;
   background-color: orange;
   color: white;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 
 

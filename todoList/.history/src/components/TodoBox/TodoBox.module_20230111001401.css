@@ -43,8 +43,6 @@ header {
   height: 100%;
   outline: none;
   border:none;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
 }
 
 .todoInput button{
@@ -52,8 +50,7 @@ header {
   height: 100%;
   background-color: orange;
   color: white;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 10%;
 }
 
 
