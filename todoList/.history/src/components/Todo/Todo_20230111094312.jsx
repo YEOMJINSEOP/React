@@ -11,7 +11,7 @@ function Todo(props) {
       <input className={styles.checkBox} type="checkbox" id='todoCheck' onClick={() => {
         setIsChecked((prev) => !prev);        
       }} />
-      <span className={styles.content}>{content}</span>
+      <span>className={styles.checkBoxLabel}</span>
       <button><FaTrash className={styles.removeBtn}/></button>
     </div>
   );

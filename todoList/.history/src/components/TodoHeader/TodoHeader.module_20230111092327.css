@@ -1,0 +1,12 @@
+header {
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.filterBtns button{
+  pori
+  color: orange;
+  font-weight: bold;
+}

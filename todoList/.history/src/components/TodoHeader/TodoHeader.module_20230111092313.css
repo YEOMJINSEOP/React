@@ -1,0 +1,10 @@
+header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.filterBtns button{
+  color: orange;
+  font-weight: bold;
+}

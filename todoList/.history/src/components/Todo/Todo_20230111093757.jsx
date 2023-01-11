@@ -7,11 +7,11 @@ function Todo(props) {
   const [content, setContent] = useState('공부하기');
   return (
     <div className={styles.todo}>
-      <label className={styles.checkBoxLabel} for='todoCheck'></label>
-      <input className={styles.checkBox} type="checkbox" id='todoCheck' onClick={() => {
+      <label className={styles.checkBox} for='todoCheck'></label>
+      <input type="checkbox" id='todoCheck' onClick={() => {
         setIsChecked((prev) => !prev);        
       }} />
-      <span className={styles.content}>{content}</span>
+      {content}
       <button><FaTrash className={styles.removeBtn}/></button>
     </div>
   );

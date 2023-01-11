@@ -1,0 +1,13 @@
+header {
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.filterBtns button{
+  position: absolute;
+  
+  color: orange;
+  font-weight: bold;
+}

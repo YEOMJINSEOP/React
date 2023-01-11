@@ -1,7 +1,7 @@
 .todo {
   width: 100%;
   height: 26px;
-  padding-top: 32px;
+  padding-top: 14px;
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
@@ -27,8 +27,8 @@
 
 .removeBtn{
   position: absolute;
-  font-size: 20px;
-  top: 20px;
+  font-size: 22px;
+  top: 8px;
   right: 20px;
   color: white;
   border-radius: 100%;

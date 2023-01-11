@@ -1,0 +1,12 @@
+.todo {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.removeBtn{
+  position: absolute;
+  top: 0;
+}

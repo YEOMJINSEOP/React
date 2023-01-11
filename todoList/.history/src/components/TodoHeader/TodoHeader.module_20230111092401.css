@@ -1,0 +1,15 @@
+header {
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.filterBtns{
+  position: absolute;
+  right: 0;
+}
+.filterBtns button{
+  color: orange;
+  font-weight: bold;
+}
