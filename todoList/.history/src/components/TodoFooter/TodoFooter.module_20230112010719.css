@@ -7,7 +7,7 @@
 
 .todoInput{
   width: 90%;
-  height: 25px;
+  /* height: 25px; */
 }
 
 .todoInput input{
@@ -17,18 +17,15 @@
   border:none;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  padding-left: 8px;
 }
 
 .todoInput button{
   width: 15%;
   height: 100%;
-  padding: 0;
   background-color: orange;
   color: white;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  font-size: 12px;
 }
 
 

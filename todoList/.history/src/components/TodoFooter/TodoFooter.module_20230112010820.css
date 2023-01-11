@@ -15,20 +15,19 @@
   height: 100%;
   outline: none;
   border:none;
+  padding:0;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  padding-left: 8px;
 }
 
 .todoInput button{
   width: 15%;
   height: 100%;
-  padding: 0;
+  padding:0;
   background-color: orange;
   color: white;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  font-size: 12px;
 }
 
 

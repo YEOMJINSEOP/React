@@ -10,16 +10,15 @@ function TodoBox(props) {
     setTodos((prev) => 
       [...prev, todo]
     )
-    console.log(todos);
   }
   return (
     <div className={styles.todoBox}>
       <TodoHeader/>
-      <ul className={styles.todoList}> 
-          {todos.map((todo, idx) => {
-            return <li key={idx}><Todo content={todo}/></li>
-          })}
-      </ul>
+      <div className={styles.todoList}>
+        <Todo/>
+        <Todo/>
+        <Todo/>
+      </div>
       <TodoFooter onAdd={handleAdd}/>
     </div>
   );

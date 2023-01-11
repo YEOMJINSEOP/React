@@ -7,20 +7,19 @@ import TodoFooter from '../TodoFooter/TodoFooter';
 function TodoBox(props) {
   const [todos, setTodos] = useState([]);
   const handleAdd = (todo) => {
-    setTodos((prev) => 
-      [...prev, todo]
-    )
-    console.log(todos);
+    setTodos((prev) => {
+      return [...prev, todo]
+    })
   }
   return (
     <div className={styles.todoBox}>
       <TodoHeader/>
-      <ul className={styles.todoList}> 
-          {todos.map((todo, idx) => {
-            return <li key={idx}><Todo content={todo}/></li>
-          })}
-      </ul>
-      <TodoFooter onAdd={handleAdd}/>
+      <div className={styles.todoList}>
+        <Todo/>
+        <Todo/>
+        <Todo/>
+      </div>
+      <TodoFooter/>
     </div>
   );
   }
