@@ -2,7 +2,6 @@ import React from 'react';
 import Todo from '../Todo/Todo';
 import styles from './TodoBox.module.css';
 import TodoHeader from '../TodoHeader/TodoHeader';
-import TodoFooter from '../TodoFooter/TodoFooter';
 
 function TodoBox(props) {
   return (

@@ -13,10 +13,9 @@ button {
   background-color: #28345c;
   width: 400px;
   height: 400px;
-  position: absolute;
-  top:20%;
+  position: relative;
+  top:40%;
   left: 40%;
-  border-radius: 10px;
 }
 
 .todoList{

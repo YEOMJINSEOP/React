@@ -1,0 +1,23 @@
+header {
+  height: 40px;
+  padding-left: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border:none;
+  border-top-left-radius: 10px;
+}
+
+.filterBtns{
+  position: absolute;
+  right: 10px;
+}
+.filterBtns button{
+  color: orange;
+  font-weight: bold;
+}
+
+.darkThemeBtn{
+  color: white;
+  cursor: pointer;
+}

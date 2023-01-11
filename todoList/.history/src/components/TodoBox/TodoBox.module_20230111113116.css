@@ -14,9 +14,8 @@ button {
   width: 400px;
   height: 400px;
   position: absolute;
-  top:20%;
+  top:50%;
   left: 40%;
-  border-radius: 10px;
 }
 
 .todoList{
