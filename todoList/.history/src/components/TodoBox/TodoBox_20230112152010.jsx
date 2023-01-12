@@ -39,8 +39,8 @@ function TodoBox(props) {
     <div className={styles.todoBox}>
       <TodoHeader/>
       <ul className={styles.todoList}> 
-          {todos.map((todo) => {
-            return <li key={todo.content}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
+          {todos.map((todo, idx) => {
+            return <li key={idx}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
           })}
       </ul>
       <TodoFooter onAdd={handleAdd}/>

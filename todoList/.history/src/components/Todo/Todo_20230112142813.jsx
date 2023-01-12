@@ -15,10 +15,10 @@ function Todo({todo, handleActive, handleDelete}) {
         setIsActive((prev) => !prev);
         handleActive(todo);
       }} />
-      <span className={styles.content}>{todo.content}</span>
+      <span className={styles.content}>{content}</span>
       <button onClick={
         () => {
-        handleDelete(todo);
+          handleDelete(todo);
       }
     }><FaTrash className={styles.removeBtn}/></button>
     </div>

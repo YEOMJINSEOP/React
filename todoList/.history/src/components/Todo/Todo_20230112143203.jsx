@@ -18,7 +18,7 @@ function Todo({todo, handleActive, handleDelete}) {
       <span className={styles.content}>{todo.content}</span>
       <button onClick={
         () => {
-        handleDelete(todo);
+          handleDelete(todo);
       }
     }><FaTrash className={styles.removeBtn}/></button>
     </div>

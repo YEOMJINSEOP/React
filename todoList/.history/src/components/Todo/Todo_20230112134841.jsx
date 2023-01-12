@@ -2,23 +2,21 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import {FaTrash} from 'react-icons/fa';
 import styles from './Todo.module.css';
-function Todo({todo, handleActive, handleDelete}) {
-  const [isActive, setIsActive] = useState(false);
-
+function Todo({todo, handleDelete}) {
+  const [isCompleted, setIsCompleted] = useState(false);  
   useEffect(() => {
 
-  }, [])
+  }, [isCompleted])
 
   return (
-    <div className={isActive ? styles.todoCompleted : styles.todo}>
+    <div className={isCompleted ? styles.todoCompleted : styles.todo}>
       <input className={styles.checkBox} type="checkbox" id='todoCheck' onClick={() => {
-        setIsActive((prev) => !prev);
-        handleActive(todo);
+        setIsCompleted((prev) => !prev);        
       }} />
-      <span className={styles.content}>{todo.content}</span>
+      <span className={styles.content}>{todo}</span>
       <button onClick={
         () => {
-        handleDelete(todo);
+          handleDelete(todo);
       }
     }><FaTrash className={styles.removeBtn}/></button>
     </div>

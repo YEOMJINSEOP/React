@@ -13,12 +13,12 @@ function Todo({todo, handleActive, handleDelete}) {
     <div className={isActive ? styles.todoCompleted : styles.todo}>
       <input className={styles.checkBox} type="checkbox" id='todoCheck' onClick={() => {
         setIsActive((prev) => !prev);
-        handleActive(todo);
+        handleActive(todo.content);
       }} />
       <span className={styles.content}>{todo.content}</span>
       <button onClick={
         () => {
-        handleDelete(todo);
+          handleDelete(todo);
       }
     }><FaTrash className={styles.removeBtn}/></button>
     </div>

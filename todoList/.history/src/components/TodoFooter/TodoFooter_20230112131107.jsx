@@ -12,7 +12,7 @@ function TodoFooter({onAdd}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if(content === ''){return}
-    onAdd({content, active:true});
+    onAdd(content);
     setContent('');
   }
 
@@ -29,7 +29,6 @@ function TodoFooter({onAdd}) {
         <input 
           type="text" 
           value={content} 
-          maxLength = "24"
           onChange={handleInputChange}
           onKeyUp= {handleSubmitOnEnter}
           />

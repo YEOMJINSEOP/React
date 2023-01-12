@@ -3,14 +3,9 @@ import Todo from '../Todo/Todo';
 import styles from './TodoBox.module.css';
 import TodoHeader from '../TodoHeader/TodoHeader';
 import TodoFooter from '../TodoFooter/TodoFooter';
-import { useEffect } from 'react';
 
 function TodoBox(props) {
   const [todos, setTodos] = useState([]);
-
-  useEffect(() => {
-      console.log(todos);
-  }, [todos])
 
   const handleAdd = (todo) => {
     setTodos((prev) => 
@@ -19,19 +14,19 @@ function TodoBox(props) {
   }
 
   const handleDelete = (delTodo) => {
-    setTodos((prev) => todos.filter((todo) => todo !== delTodo));
+    setTodos(todos.filter((todo) => todo !== delTodo));
   }
 
   const handleActive = (checkTodo) => {
-      console.log('✅', checkTodo);
       setTodos((prev) => todos.map((todo) => {
-        if(todo.content === checkTodo.content){
-          return {content: todo.content, active: !(todo.content)};
+        if(todo === checkTodo){
+          return {content: todo.content, active: !todo.active};
         }
         else{
           return todo;
         }
       }))
+      console.log(todos);
     }
   
 
@@ -39,8 +34,8 @@ function TodoBox(props) {
     <div className={styles.todoBox}>
       <TodoHeader/>
       <ul className={styles.todoList}> 
-          {todos.map((todo) => {
-            return <li key={todo.content}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
+          {todos.map((todo, idx) => {
+            return <li key={idx}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
           })}
       </ul>
       <TodoFooter onAdd={handleAdd}/>
