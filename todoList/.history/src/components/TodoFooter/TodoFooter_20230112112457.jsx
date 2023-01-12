@@ -9,20 +9,6 @@ function TodoFooter({onAdd}) {
     setContent(e.target.value);
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if(content === ''){return}
-    onAdd(content);
-    setContent('');
-  }
-
-  const handleSubmitOnEnter = (e) => {
-    if(e.key === 'Enter' && e.nativeEvent.isComposing == false){
-      handleSubmit(e);
-    }
-    else{return}
-  }
-
   return (
     <footer className={styles.footer}>
       <div className={styles.todoInput}>
@@ -30,9 +16,12 @@ function TodoFooter({onAdd}) {
           type="text" 
           value={content} 
           onChange={handleInputChange}
-          onKeyUp= {handleSubmitOnEnter}
+          onKeyDown={(e) => console.log(e.key === 'Enter')}
           />
-        <button onClick={handleSubmit}
+        <button onClick={() => {
+          onAdd(content)
+          setContent('');
+        }}
         >add</button>
       </div>
     </footer>

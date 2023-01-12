@@ -11,7 +11,6 @@ function TodoFooter({onAdd}) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(content === ''){return}
     onAdd(content);
     setContent('');
   }

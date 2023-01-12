@@ -11,16 +11,14 @@ function TodoFooter({onAdd}) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(content === ''){return}
     onAdd(content);
     setContent('');
   }
 
-  const handleSubmitOnEnter = (e) => {
+  const handleInputOnEnter = (e) => {
     if(e.key === 'Enter' && e.nativeEvent.isComposing == false){
-      handleSubmit(e);
+      handleInputOnC
     }
-    else{return}
   }
 
   return (
@@ -30,7 +28,7 @@ function TodoFooter({onAdd}) {
           type="text" 
           value={content} 
           onChange={handleInputChange}
-          onKeyUp= {handleSubmitOnEnter}
+          onKeyUp= {}
           />
         <button onClick={handleSubmit}
         >add</button>
