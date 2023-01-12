@@ -11,18 +11,16 @@ function TodoBox(props) {
       [...prev, todo]
     )
   }
-  const handleDelete = (content) => {
-    setTodos((prev) => prev.filter((todo) => {
-      console.log('todo:', todo, 'content:', content);
-      return todo !== content
-    }));
+  const handleDelete = (e) => {
+    // setTodos((prev) => prev.filter((todo) => todo !== e.target.value));
+    console.log(e.target);
   }
   return (
     <div className={styles.todoBox}>
       <TodoHeader/>
       <ul className={styles.todoList}> 
           {todos.map((todo, idx) => {
-            return <li key={idx}><Todo todo={todo} handleDelete={handleDelete}/></li>
+            return <li key={idx}><Todo content={todo} handleDelete={handleDelete}/></li>
           })}
       </ul>
       <TodoFooter onAdd={handleAdd}/>

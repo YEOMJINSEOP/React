@@ -9,7 +9,7 @@ function Todo({todo, handleDelete}) {
       <input className={styles.checkBox} type="checkbox" id='todoCheck' onClick={() => {
         setActive((prev) => !prev);        
       }} />
-      <span className={styles.content}>{content}</span>
+      <span className={styles.content}>content</span>
       <button onClick={
         () => handleDelete(content)
       }
