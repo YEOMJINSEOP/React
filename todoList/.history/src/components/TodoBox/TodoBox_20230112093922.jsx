@@ -12,8 +12,7 @@ function TodoBox(props) {
     )
   }
   const handleDelete = (content) => {
-    setTodos(todos.filter((todo) => {
-      console.log('🔫',todos);
+    setTodos((prev) => prev.filter((todo) => {
       console.log('todo:', todo, 'content:', content);
       return todo !== content
     }));
@@ -22,8 +21,11 @@ function TodoBox(props) {
     <div className={styles.todoBox}>
       <TodoHeader/>
       <ul className={styles.todoList}> 
+          <Todo todo={등산하기} handleDelete={handleDelete}/>
+          <Todo todo={숙제하기} handleDelete={handleDelete}/>
+          <Todo todo={짐싸기} handleDelete={handleDelete}/>
+          <Todo todo={등록하기} handleDelete={handleDelete}/>
           {todos.map((todo, idx) => {
-            console.log('🔥',todos);
             return <li key={idx}><Todo todo={todo} handleDelete={handleDelete}/></li>
           })}
       </ul>

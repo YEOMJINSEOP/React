@@ -12,8 +12,7 @@ function TodoBox(props) {
     )
   }
   const handleDelete = (content) => {
-    setTodos(todos.filter((todo) => {
-      console.log('🔫',todos);
+    setTodos((prev) => prev.filter((todo) => {
       console.log('todo:', todo, 'content:', content);
       return todo !== content
     }));
@@ -23,7 +22,6 @@ function TodoBox(props) {
       <TodoHeader/>
       <ul className={styles.todoList}> 
           {todos.map((todo, idx) => {
-            console.log('🔥',todos);
             return <li key={idx}><Todo todo={todo} handleDelete={handleDelete}/></li>
           })}
       </ul>

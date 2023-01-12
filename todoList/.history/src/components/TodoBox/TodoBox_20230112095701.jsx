@@ -21,12 +21,13 @@ function TodoBox(props) {
   return (
     <div className={styles.todoBox}>
       <TodoHeader/>
-      <ul className={styles.todoList}> 
+      <Todo todo={todo} handleDelete={handleDelete}/>
+      {/* <ul className={styles.todoList}> 
           {todos.map((todo, idx) => {
             console.log('🔥',todos);
             return <li key={idx}><Todo todo={todo} handleDelete={handleDelete}/></li>
           })}
-      </ul>
+      </ul> */}
       <TodoFooter onAdd={handleAdd}/>
     </div>
   );

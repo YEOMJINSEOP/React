@@ -12,7 +12,7 @@ function Todo({todo, handleDelete}) {
       <span className={styles.content}>{todo}</span>
       <button onClick={
         () => {
-          console.log('delete', todo);
+          console.log('delete', content);
           handleDelete(todo);
       }
     }><FaTrash className={styles.removeBtn}/></button>
