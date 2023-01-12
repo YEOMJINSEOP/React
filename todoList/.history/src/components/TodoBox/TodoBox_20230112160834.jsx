@@ -14,7 +14,7 @@ function TodoBox(props) {
 
   const handleAdd = (todo) => {
     setTodos((prev) => 
-      [...prev, {id: todo.id, content: todo.content, active: todo.active }]
+      [...prev, {content: todo.content, active: todo.active }]
     )
   }
 
@@ -26,7 +26,7 @@ function TodoBox(props) {
       console.log('✅', checkTodo);
       setTodos((prev) => todos.map((todo) => {
         if(todo.content === checkTodo.content){
-          return {id: todo.id, content: todo.content, active: !(todo.content)};
+          return {content: todo.content, active: !(todo.content)};
         }
         else{
           return todo;
@@ -40,7 +40,7 @@ function TodoBox(props) {
       <TodoHeader/>
       <ul className={styles.todoList}> 
           {todos.map((todo) => {
-            return <li key={todo.id}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
+            return <li key={todo.content}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
           })}
       </ul>
       <TodoFooter onAdd={handleAdd}/>

@@ -40,7 +40,7 @@ function TodoBox(props) {
       <TodoHeader/>
       <ul className={styles.todoList}> 
           {todos.map((todo) => {
-            return <li key={todo.id}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
+            return <li key={todo.content}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
           })}
       </ul>
       <TodoFooter onAdd={handleAdd}/>
