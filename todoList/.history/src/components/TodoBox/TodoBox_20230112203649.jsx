@@ -44,13 +44,13 @@ function TodoBox(props) {
       <ul className={styles.todoList}> 
           {todos.map((todo) => {
             if(filter === 'All'){
-              return <li key={todo.id}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
+              return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
             }
             else if(filter === 'Active' && todo.active === true){
-                return <li key={todo.id}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
+                return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
             }
             else if(filter === 'Completed' && todo.active === false){
-                return <li key={todo.id}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
+                return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
             }
             else{
               return

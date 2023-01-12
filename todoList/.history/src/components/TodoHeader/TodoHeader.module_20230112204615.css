@@ -11,14 +11,7 @@ header {
   right: 10px;
 }
 
-.btnClicked{
-  width:fit-content;
-  color: orange;
-  font-weight: bold;
-  border-bottom: 2px solid white;
-}
-
-.btnNotClicked{
+.buttonNotClicked{
   color: orange;
   font-weight: bold;
 }

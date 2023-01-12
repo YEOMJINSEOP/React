@@ -12,7 +12,7 @@ header {
 }
 
 .btnClicked{
-  width:fit-content;
+  width:fit-content
   color: orange;
   font-weight: bold;
   border-bottom: 2px solid white;
