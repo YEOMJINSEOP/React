@@ -34,35 +34,34 @@ function TodoBox(props) {
       }))
     }
   
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('');
 
   const handleFilter = (category) => {
+    switch(category){
+      case 'All':
+        setFilter('');
+        break;
+      case 'Active':
+        setFilter(true);
+        break;
+      case 'Completed':
+        setFilter(false);
+        break;
+    }
     setFilter(category);
   }
+
 
 
   return (
     <div className={styles.todoBox}>
       <TodoHeader handleFilter={handleFilter}/>
       <ul className={styles.todoList}> 
-          {todos.map((todo) => {
-            if(filter === 'Active'){
-              if(todo.active === true){
-                return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
-              }
-              else{return}
-            }
-            else if(filter === 'Completed'){
-              if(todo.active === false){
-                return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
-              }
-              else{
-                return 
-              }
-            }
-            else{
-              return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
-            }
+          {filter === '' || todos.filter((todo) => {
+            todo.active === filter
+          })
+          .map((todo) => {
+            return <li key={todo.id}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
           })}
       </ul>
       <TodoFooter onAdd={handleAdd}/>

@@ -4,6 +4,10 @@ import styles from './TodoHeader.module.css';
 
 function TodoHeader({handleFilter}) {
   
+  const handleFilterBtn = (e) => {
+    console.log(e.target.innerHTML);
+  }
+
   return (
       <header>
         <BiSun className={styles.darkThemeBtn}/>

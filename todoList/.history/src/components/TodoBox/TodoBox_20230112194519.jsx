@@ -50,18 +50,11 @@ function TodoBox(props) {
               if(todo.active === true){
                 return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
               }
-              else{return}
             }
             else if(filter === 'Completed'){
               if(todo.active === false){
                 return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
               }
-              else{
-                return 
-              }
-            }
-            else{
-              return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
             }
           })}
       </ul>

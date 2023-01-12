@@ -37,6 +37,17 @@ function TodoBox(props) {
   const [filter, setFilter] = useState('All');
 
   const handleFilter = (category) => {
+    switch(category){
+      case 'All':
+        setFilter('All');
+        break;
+      case 'Active':
+        setFilter('Active');
+        break;
+      case 'Completed':
+        setFilter('Completed');
+        break;
+    }
     setFilter(category);
   }
 
@@ -46,23 +57,7 @@ function TodoBox(props) {
       <TodoHeader handleFilter={handleFilter}/>
       <ul className={styles.todoList}> 
           {todos.map((todo) => {
-            if(filter === 'Active'){
-              if(todo.active === true){
-                return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
-              }
-              else{return}
-            }
-            else if(filter === 'Completed'){
-              if(todo.active === false){
-                return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
-              }
-              else{
-                return 
-              }
-            }
-            else{
-              return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
-            }
+            return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
           })}
       </ul>
       <TodoFooter onAdd={handleAdd}/>

@@ -16,7 +16,7 @@ function Todo({todo, filter, handleActive, handleDelete}) {
   }, [isCompleted])
   return (
     <div className={isCompleted ? styles.todoCompleted : styles.todo}>
-      <input className={styles.checkBox} checked={isCompleted ? true : false} type="checkbox" id='todoCheck' onClick={() => {
+      <input className={isCompleted ? styles.checkBox : styles. checkBox2} type="checkbox" id='todoCheck' onClick={() => {
         setIsCompleted((prev) => !prev);
         handleActive(todo);
       }} />

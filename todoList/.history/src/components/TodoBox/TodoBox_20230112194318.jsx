@@ -46,22 +46,11 @@ function TodoBox(props) {
       <TodoHeader handleFilter={handleFilter}/>
       <ul className={styles.todoList}> 
           {todos.map((todo) => {
-            if(filter === 'Active'){
-              if(todo.active === true){
-                return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
-              }
-              else{return}
-            }
-            else if(filter === 'Completed'){
-              if(todo.active === false){
-                return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
-              }
-              else{
-                return 
-              }
-            }
-            else{
+            if(filter === 'All'){
               return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
+            }
+            else if(filter === 'Active'){
+            return <li key={todo.id}><Todo todo={todo} filter={filter} handleActive={handleActive} handleDelete={handleDelete}/></li>
             }
           })}
       </ul>
