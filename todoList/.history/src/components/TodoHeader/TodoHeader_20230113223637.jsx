@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
+import { useEffect } from 'react';
 import {BiSun} from 'react-icons/bi';
 import { DarkModeContext } from '../../context/DarkModeProvider';
 import styles from './TodoHeader.module.css';
@@ -16,7 +17,7 @@ function TodoHeader({filter, handleFilter}) {
 
   return (
       <header>
-        <BiSun className={darkMode ? styles.darkThemeBtn : styles.darkThemeBtnLight} onClick={() => toggleDarkMode()}/>
+        <BiSun className={styles.darkThemeBtn}/>
         <div className={styles.filterBtns}>
           <button className={btnClicked === 'All' ? styles.btnClicked : styles.btnNotClicked} onClick={(e) => {handleBtnClick(e)}}>All</button>
           <button className={btnClicked === 'Active' ? styles.btnClicked : styles.btnNotClicked} onClick={(e) => {handleBtnClick(e)}}>Active</button>

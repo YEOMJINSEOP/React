@@ -25,9 +25,11 @@ header {
 
 .darkThemeBtn{
   color: white;
+  font-weight: bold;
   cursor: pointer;
 }
 
 .darkThemeBtnLight{
+  font-weight: bold;
   cursor: pointer;
 }

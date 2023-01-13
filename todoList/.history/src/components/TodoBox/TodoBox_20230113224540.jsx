@@ -40,6 +40,7 @@ function TodoBox(props) {
 
   const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
 
+
   return (
     <div className={darkMode ? styles.todoBox : styles.todoBoxLight}>
       <TodoHeader filter={filter} handleFilter={handleFilter}/>

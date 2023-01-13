@@ -40,10 +40,11 @@ function TodoBox(props) {
 
   const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
 
+
   return (
     <div className={darkMode ? styles.todoBox : styles.todoBoxLight}>
       <TodoHeader filter={filter} handleFilter={handleFilter}/>
-      <ul className={darkMode ? styles.todoList : styles.todoListLight}> 
+      <ul className={styles.todoList}> 
           {todos.map((todo) => {
             if(filter === 'All'){
               return <li key={todo.id}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>
