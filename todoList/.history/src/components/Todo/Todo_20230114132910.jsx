@@ -4,8 +4,10 @@ import {FaTrash} from 'react-icons/fa';
 import styles from './Todo.module.css';
 function Todo({todo, handleActive, handleDelete}) {
 
-  const {content, active} = todo;
+  const {active} = todo;
   
+  useEffect(() => {}, []);
+
   return (
     <div className={styles.todo}>
       <input 
@@ -14,8 +16,8 @@ function Todo({todo, handleActive, handleDelete}) {
         checked={active === false}
         onChange={() => {
           handleActive(todo);
-        }}/>
-      <span className={styles.content}>{content}</span>
+        }} />
+      <span className={styles.content}>{todo.content}</span>
       <button onClick={
         () => {
         handleDelete(todo);

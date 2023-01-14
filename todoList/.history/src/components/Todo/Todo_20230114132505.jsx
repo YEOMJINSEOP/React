@@ -4,18 +4,16 @@ import {FaTrash} from 'react-icons/fa';
 import styles from './Todo.module.css';
 function Todo({todo, handleActive, handleDelete}) {
 
-  const {content, active} = todo;
+  const {active} = todo;
   
+  useEffect(() => {}, []);
+
   return (
     <div className={styles.todo}>
-      <input 
-        className={styles.checkBox} 
-        type="checkbox" 
-        checked={active === false}
-        onChange={() => {
-          handleActive(todo);
-        }}/>
-      <span className={styles.content}>{content}</span>
+      <input className={styles.checkBox} type="checkbox" onChange={() => {
+        handleActive({...todo, active: !active});
+      }} />
+      <span className={styles.content}>{todo.content}</span>
       <button onClick={
         () => {
         handleDelete(todo);

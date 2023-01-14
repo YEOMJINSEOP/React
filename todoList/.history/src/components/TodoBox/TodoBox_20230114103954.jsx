@@ -21,9 +21,9 @@ function TodoBox(props) {
   }
 
   const handleActive = (checkTodo) => {
-      setTodos((todos) => todos.map((todo) => {
-        if(todo.id === checkTodo.id){
-          return {...todo, active: !(todo.active)};
+      setTodos((prev) => todos.map((todo) => {
+        if(todo.content === checkTodo.content){
+          return {id: todo.id, content: todo.content, active: !(todo.content)};
         }
         else{
           return todo;
