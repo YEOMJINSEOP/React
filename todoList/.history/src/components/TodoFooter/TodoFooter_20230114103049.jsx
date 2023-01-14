@@ -12,7 +12,7 @@ function TodoFooter({onAdd}) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(content.trim() === ''){setContent(''); return}
+    if(content.trim() === ''){setContetn(''); return}
     onAdd({id: uuidv4(), content, active:true});
     setContent('');
   }
