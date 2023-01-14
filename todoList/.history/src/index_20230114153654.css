@@ -1,6 +1,7 @@
 :root {
   --color-bg-dark: #94846c;
   --color-bg: #c7bfb4;
+  --color-grey: #d1d1d1;
   --color-text: #22243b;
   --color-white: #22243b;
 }
@@ -8,6 +9,7 @@
 html.dark{
   --color-bg-dark: #28345c;
   --color-bg: #485da4;
+  --color-grey: #d1d1d1;
   --color-text: #22243b;
   --color-white: white;
 }

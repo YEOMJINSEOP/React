@@ -21,6 +21,7 @@ button {
 
 .todoList{
   background-color: var(--color-bg);
+  color: var(--color-text);
   height: 320px;
   margin: 0;
   padding: 0;

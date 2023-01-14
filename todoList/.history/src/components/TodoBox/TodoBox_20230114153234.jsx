@@ -3,6 +3,9 @@ import Todo from '../Todo/Todo';
 import styles from './TodoBox.module.css';
 import TodoHeader from '../TodoHeader/TodoHeader';
 import TodoFooter from '../TodoFooter/TodoFooter';
+import { useEffect } from 'react';
+import { useContext } from 'react';
+import { DarkModeContext } from '../../context/DarkModeProvider';
 
 function TodoBox(props) {
   const [todos, setTodos] = useState([]);
@@ -35,10 +38,12 @@ function TodoBox(props) {
     setFilter(category);
   }
 
+  const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
+
   return (
     <div className={styles.todoBox}>
       <TodoHeader filter={filter} handleFilter={handleFilter}/>
-      <ul className={styles.todoList}> 
+      <ul className={darkMode ? styles.todoList : styles.todoListLight}> 
           {todos.map((todo) => {
             if(filter === 'All'){
               return <li key={todo.id}><Todo todo={todo} handleActive={handleActive} handleDelete={handleDelete}/></li>

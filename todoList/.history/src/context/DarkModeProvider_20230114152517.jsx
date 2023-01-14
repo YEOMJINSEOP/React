@@ -8,8 +8,8 @@ export const DarkModeContext = createContext();
 function DarkModeProvider({children}) {
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
-    setDarkMode((darkMode) => !darkMode);
-    updateDarkMode(!darkMode);
+    setDarkMode((mode) => !mode);
+    updateDarkMode((mode) => !mode);
   };
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function DarkModeProvider({children}) {
       window.matchMedia('(prefers-color-scheme: dark)').matches);
     setDarkMode(isDark);
     updateDarkMode(isDark);
-  }, [darkMode])
+  })
   return (
     <DarkModeContext.Provider value={{darkMode, toggleDarkMode}}>
       {children}

@@ -9,7 +9,7 @@ function DarkModeProvider({children}) {
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
     setDarkMode((darkMode) => !darkMode);
-    updateDarkMode(!darkMode);
+    updateDarkMode(darkMode);
   };
 
   useEffect(() => {
