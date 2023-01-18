@@ -1,0 +1,9 @@
+.header{
+  background-color: black;
+  height: 60px;
+  display: flex;
+}
+
+.searchBox{
+  height: 30px;
+}

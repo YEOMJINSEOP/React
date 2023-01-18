@@ -1,0 +1,18 @@
+.header{
+  background-color: black;
+  height: 60px;
+}
+
+.logo{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  left: 30px;
+}
+.searchBox{
+  width: 700px;
+  height: 30px;
+  position: relative;
+  left: 200px;
+}

@@ -1,0 +1,14 @@
+.listContainer{
+  width: 100%;
+}
+
+.videoList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video {
+  width: 100px;
+  border: 1px solid black;
+}

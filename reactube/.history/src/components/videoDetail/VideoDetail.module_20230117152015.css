@@ -1,0 +1,9 @@
+.videoPlayer{
+  width: 800px;
+  height: 500px;
+}
+
+.detailContainer{
+  display: flex;
+  justify-content: center;
+}

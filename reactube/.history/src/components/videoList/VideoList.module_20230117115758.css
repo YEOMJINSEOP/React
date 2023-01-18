@@ -1,0 +1,21 @@
+.listContainer{
+  width: 100%;
+}
+
+.videoList {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  width: 380px;
+  height: 200px;
+  border: 1px solid black;
+}

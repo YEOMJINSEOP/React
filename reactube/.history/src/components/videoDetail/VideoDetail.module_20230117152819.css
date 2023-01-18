@@ -1,0 +1,9 @@
+.videoContanier{
+  width: 1024px;
+  background-color: grey;
+}
+
+.videoPlayer{
+  width: 800px;
+  height: 500px;
+}

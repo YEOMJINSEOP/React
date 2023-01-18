@@ -1,0 +1,8 @@
+.videoList {
+  list-style: none;
+  display: flex;
+}
+
+.video {
+  border: 1px solid black;
+}

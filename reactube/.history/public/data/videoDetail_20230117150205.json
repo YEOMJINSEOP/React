@@ -1,0 +1,70 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "t8cAo54pVYu8znXSG-I-SPpOYkE",
+  "items": [
+      {
+          "kind": "youtube#video",
+          "etag": "agkl6Oj3dLL5edEYKcP6Maw5Xf8",
+          "id": "RQ0m99laOMQ",
+          "snippet": {
+              "publishedAt": "2023-01-15T05:05:16Z",
+              "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+              "title": "Los Angeles Chargers vs. Jacksonville Jaguars | 2022 Super Wild Card Weekend Game Highlights",
+              "description": "Check out our other channels:\nNFL Mundo https://www.youtube.com/mundonfl\nNFL Brasil https://www.youtube.com/c/NFLBrasilOficial\nNFL UK https://www.youtube.com/channel/UCVe0dAja_vZCmvfHXjtdRQA \nNFL Fantasy Football https://www.youtube.com/nflfantasyfootball\nNFL Play Football https://www.youtube.com/playfootball\nNFL Throwback http://www.youtube.com/nflvault\nNFL Films http://www.youtube.com/nflfilms\nNFL Network http://www.youtube.com/nflnetwork\n\n#NFL #Football #AmericanFootball",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/RQ0m99laOMQ/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/RQ0m99laOMQ/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/RQ0m99laOMQ/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/RQ0m99laOMQ/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/RQ0m99laOMQ/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "NFL",
+              "categoryId": "17",
+              "liveBroadcastContent": "none",
+              "localized": {
+                  "title": "Los Angeles Chargers vs. Jacksonville Jaguars | 2022 Super Wild Card Weekend Game Highlights",
+                  "description": "Check out our other channels:\nNFL Mundo https://www.youtube.com/mundonfl\nNFL Brasil https://www.youtube.com/c/NFLBrasilOficial\nNFL UK https://www.youtube.com/channel/UCVe0dAja_vZCmvfHXjtdRQA \nNFL Fantasy Football https://www.youtube.com/nflfantasyfootball\nNFL Play Football https://www.youtube.com/playfootball\nNFL Throwback http://www.youtube.com/nflvault\nNFL Films http://www.youtube.com/nflfilms\nNFL Network http://www.youtube.com/nflnetwork\n\n#NFL #Football #AmericanFootball"
+              }
+          },
+          "contentDetails": {
+              "duration": "PT14M20S",
+              "dimension": "2d",
+              "definition": "hd",
+              "caption": "true",
+              "licensedContent": true,
+              "contentRating": {},
+              "projection": "rectangular"
+          },
+          "statistics": {
+              "viewCount": "4325896",
+              "likeCount": "49478",
+              "favoriteCount": "0",
+              "commentCount": "9950"
+          }
+      }
+  ],
+  "pageInfo": {
+      "totalResults": 1,
+      "resultsPerPage": 1
+  }
+}

@@ -1,0 +1,13 @@
+.video {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  width: 380px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.img{
+  height: 100px;
+}
