@@ -1,9 +1,0 @@
-.videoList {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.video {
-  border: 1px solid black;
-}
