@@ -1,0 +1,26 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #efefef;
+}
+
+.logoAndMenu{
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
