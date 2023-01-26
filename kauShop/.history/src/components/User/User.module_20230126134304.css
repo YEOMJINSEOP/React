@@ -1,0 +1,11 @@
+.avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.userName {
+  font-size:14px;
+  padding-left: 4px;
+  padding-right: 10px;
+}
