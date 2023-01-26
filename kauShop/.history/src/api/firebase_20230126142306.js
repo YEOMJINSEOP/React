@@ -23,6 +23,19 @@ const auth = getAuth(app);
 // Initialize Realtime Database and get a reference to the service
 const database = getDatabase(app);
 const dbRef = ref(getDatabase());
+export async function getAdmins(){
+  get(child(dbRef, 'admins'))//
+    .then((snapshot) => {
+      if(snapshot.exist()){
+        console.log(snapshot.val());
+      }
+      else{
+        console.log('No data available');
+      }
+    })//
+    .catch(console.error)
+
+}
 
 export async function login(){
   return signInWithPopup(auth, provider)//
@@ -45,24 +58,7 @@ export async function logout(){
 }
 
 export function onUserStateChange(callback){
-  onAuthStateChanged(auth, async (user) => {
-    const updatedUser = user ? await checkAdminUser(user) : null;
-    callback(updatedUser);
+  onAuthStateChanged(auth, (user) => {
+    callback(user);
   });
 }
-
-async function checkAdminUser(user){
-  return get(child(dbRef, 'admins'))//
-    .then((snapshot) => {
-      if(snapshot.exists()){
-        const admins = snapshot.val();
-        const isAdmin = admins.includes(user.uid);
-        console.log(isAdmin);
-        return {...user, isAdmin};
-      }
-      else{
-        return user;
-      }
-    })//
-    .catch(console.error)
-};

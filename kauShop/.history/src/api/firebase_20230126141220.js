@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
-import { child, get, getDatabase, onValue, ref } from "firebase/database";
+import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -11,7 +11,9 @@ const firebaseConfig = {
   messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
   appId: process.env.REACT_APP_APP_ID,
   measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+  databaseURL: "https://shop-7198f-default-rtdb.asia-southeast1.firebasedatabase.app/",
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -22,7 +24,6 @@ const auth = getAuth(app);
 
 // Initialize Realtime Database and get a reference to the service
 const database = getDatabase(app);
-const dbRef = ref(getDatabase());
 
 export async function login(){
   return signInWithPopup(auth, provider)//
@@ -45,24 +46,7 @@ export async function logout(){
 }
 
 export function onUserStateChange(callback){
-  onAuthStateChanged(auth, async (user) => {
-    const updatedUser = user ? await checkAdminUser(user) : null;
-    callback(updatedUser);
+  onAuthStateChanged(auth, (user) => {
+    callback(user);
   });
 }
-
-async function checkAdminUser(user){
-  return get(child(dbRef, 'admins'))//
-    .then((snapshot) => {
-      if(snapshot.exists()){
-        const admins = snapshot.val();
-        const isAdmin = admins.includes(user.uid);
-        console.log(isAdmin);
-        return {...user, isAdmin};
-      }
-      else{
-        return user;
-      }
-    })//
-    .catch(console.error)
-};

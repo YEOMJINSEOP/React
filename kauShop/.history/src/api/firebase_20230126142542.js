@@ -46,18 +46,17 @@ export async function logout(){
 
 export function onUserStateChange(callback){
   onAuthStateChanged(auth, async (user) => {
-    const updatedUser = user ? await checkAdminUser(user) : null;
-    callback(updatedUser);
+    const updatedUser = user ? await adminUser(user) : null;
+    callback(user);
   });
 }
 
-async function checkAdminUser(user){
-  return get(child(dbRef, 'admins'))//
+export async function getAdmins(user){
+  get(child(dbRef, 'admins'))//
     .then((snapshot) => {
       if(snapshot.exists()){
         const admins = snapshot.val();
         const isAdmin = admins.includes(user.uid);
-        console.log(isAdmin);
         return {...user, isAdmin};
       }
       else{

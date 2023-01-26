@@ -11,8 +11,8 @@ function Navbar(props) {
 
   useEffect(() => {
     onUserStateChange((user) => {
-      setUser(user);
       console.log(user);
+      setUser(user);
     })
   }, [])
 

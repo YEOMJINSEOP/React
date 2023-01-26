@@ -11,10 +11,11 @@ function Navbar(props) {
 
   useEffect(() => {
     onUserStateChange((user) => {
-      setUser(user);
       console.log(user);
+      setUser(user);
     })
-  }, [])
+    getAdmins();
+  })
 
   const handleLogin = () => {
     login().then(setUser);

@@ -52,7 +52,7 @@ export function onUserStateChange(callback){
 }
 
 async function checkAdminUser(user){
-  return get(child(dbRef, 'admins'))//
+  get(child(dbRef, 'admins'))//
     .then((snapshot) => {
       if(snapshot.exists()){
         const admins = snapshot.val();
