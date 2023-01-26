@@ -21,6 +21,7 @@ const provider = new GoogleAuthProvider();
 const auth = getAuth(app);
 
 // Initialize Realtime Database and get a reference to the service
+const database = getDatabase(app);
 const dbRef = ref(getDatabase());
 
 export function login(){

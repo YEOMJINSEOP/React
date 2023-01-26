@@ -10,6 +10,13 @@ import User from '../User/User';
 import { useAuthContext } from '../../context/AuthContext';
 function Navbar(props) {
   const {user, login, logout} = useAuthContext();
+  const handleLogin = () => {
+    login().then(setUser);
+  };
+
+  const handleLogout = () => {
+    logout().then(setUser);
+  }
 
   return (
     <div className={styles.navbar}>
@@ -25,15 +32,15 @@ function Navbar(props) {
         </div>
       </div>
       <div className={styles.user}>
-        {user && <Link to='/cart'><AiOutlineShoppingCart/></Link>}
+        <Link to='/cart'><AiOutlineShoppingCart/></Link>
         {user && user.isAdmin && (
           <Link to='/admin'>
             <FiSettings/>
           </Link>
         )}
         {user && <User user={user}/>}
-        {!user && <button onClick={login}>로그인</button>}
-        {user && <button onClick={logout}>로그아웃</button>}
+        {!user && <button onClick={handleLogin}>로그인</button>}
+        {user && <button onClick={handleLogout}>로그아웃</button>}
       </div>
     </div>
   );
