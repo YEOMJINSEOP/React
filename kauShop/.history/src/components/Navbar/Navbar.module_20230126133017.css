@@ -2,19 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
 
   width: 100%;
   height: 60px;
   border-bottom: 1px solid #efefef;
 
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .logoAndMenu{
   display: flex;
-  width: 20%;
+  width: 30%;
   justify-content: space-between;
   align-items: center;
 }
@@ -31,11 +30,9 @@
 .user {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .user > a {
-  padding-top: 2px;
   padding-right: 20px;
   font-size: 20px;
 }

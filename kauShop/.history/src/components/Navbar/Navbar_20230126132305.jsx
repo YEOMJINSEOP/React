@@ -39,8 +39,7 @@ function Navbar(props) {
       <div className={styles.user}>
         <Link to='/cart'><AiOutlineShoppingCart/></Link>
         {!user && <button onClick={handleLogin}>로그인</button>}
-        {user && <img  className={styles.avatar} src={user.photoURL}></img>}
-        {user && <span className={styles.userName}>{user.displayName}</span>}
+        {user && <span>{user.email}</span>}
         {user && <button onClick={handleLogout}>로그아웃</button>}
       </div>
     </div>
