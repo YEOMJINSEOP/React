@@ -19,24 +19,15 @@ function Admin(props) {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsUploading(true);
-    uploadImage(file) //
+    uploadImage(file)
     .then(imageUrl => {
-      addNewProduct(product, imageUrl)//
-      .then(() => {
-        setUploadSuccess('성공적으로 제품이 추가되었습니다.');
-        setTimeout(() => {
-          setUploadSuccess(null);
-        }, 4000);
-      });
+      addNewProduct(product, imageUrl);
     })
-    .finally(() => setIsUploading(false));
     // 제품의 사진을 Cloudinary에 업로드하고, URL을 획득
     // Firebase에 새로운 제품을 추가함
   };
   return (
     <section>
-      {uploadSuccess && <p>✅ {uploadSuccess} </p>}
       {file && <img src={URL.createObjectURL(file)} alt='local file'/>}
       <form onSubmit={handleSubmit}>
         <input 
@@ -86,7 +77,7 @@ function Admin(props) {
           required
           onChange={handleChange}
         />
-        <button disabled={isUploading}>{isUploading ? '업로드중...' : '제품 등록하기'}</button>
+        <button>제품 등록하기</button>
       </form>
     </section>
   );

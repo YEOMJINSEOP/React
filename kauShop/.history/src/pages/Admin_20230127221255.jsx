@@ -23,12 +23,7 @@ function Admin(props) {
     uploadImage(file) //
     .then(imageUrl => {
       addNewProduct(product, imageUrl)//
-      .then(() => {
-        setUploadSuccess('성공적으로 제품이 추가되었습니다.');
-        setTimeout(() => {
-          setUploadSuccess(null);
-        }, 4000);
-      });
+      .then(() => setUploadSuccess('성공적으로 제품이 추가되었습니다.'));
     })
     .finally(() => setIsUploading(false));
     // 제품의 사진을 Cloudinary에 업로드하고, URL을 획득
