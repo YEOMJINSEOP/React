@@ -66,12 +66,5 @@ async function checkAdminUser(user){
 };
 
 export async function addNewProduct(product, imageUrl){
-  const id = uuid();
-  set(child(dbRef, `products/${id}`), {
-    ...product,
-    id,
-    price: parseInt(product.price),
-    image: imageUrl,
-    options: product.options.split(','),
-  })
+
 };

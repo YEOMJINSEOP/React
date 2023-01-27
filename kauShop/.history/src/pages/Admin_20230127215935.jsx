@@ -18,8 +18,8 @@ function Admin(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     uploadImage(file)
-    .then(imageUrl => {
-      addNewProduct(product, imageUrl);
+    .then(url => {
+      addNewProduct(product, url);
     })
     // 제품의 사진을 Cloudinary에 업로드하고, URL을 획득
     // Firebase에 새로운 제품을 추가함

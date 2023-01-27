@@ -72,6 +72,6 @@ export async function addNewProduct(product, imageUrl){
     id,
     price: parseInt(product.price),
     image: imageUrl,
-    options: product.options.split(','),
+    options: product.options.split(',');
   })
 };

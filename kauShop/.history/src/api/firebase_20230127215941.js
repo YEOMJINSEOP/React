@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
-import { child, get, getDatabase, set, onValue, ref } from "firebase/database";
-import {v4 as uuid} from 'uuid';
+import { child, get, getDatabase, onValue, ref } from "firebase/database";
+
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
@@ -65,13 +65,6 @@ async function checkAdminUser(user){
     .catch(console.error)
 };
 
-export async function addNewProduct(product, imageUrl){
-  const id = uuid();
-  set(child(dbRef, `products/${id}`), {
-    ...product,
-    id,
-    price: parseInt(product.price),
-    image: imageUrl,
-    options: product.options.split(','),
-  })
+export async function addNewProduct(product, imgUrl){
+
 };
