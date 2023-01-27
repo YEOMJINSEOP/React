@@ -3,23 +3,17 @@ import { useState } from 'react';
 
 function Admin(props) {
   const [product, setProduct] = useState({});
-  const [file, setFile] = useState();
+
   const handleChange = (e) => {
     const {name, value, files} = e.target;
-    if(name === 'file'){
-      setFile(files && files[0]);
-      return;
-    }
-    setProduct((product) => ({...product, [name]: value}));
+    setProduct({...product, [name]: value});
   };
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // 제품의 사진을 Cloudinary에 업로드하고, URL을 획득
-    // Firebase에 새로운 제품을 추가함
+
   };
   return (
     <section>
-      {file && <img src={URL.createObjectURL(file)} alt='local file'/>}
+      제품 추가하기
       <form onSubmit={handleSubmit}>
         <input 
           type="file" 
