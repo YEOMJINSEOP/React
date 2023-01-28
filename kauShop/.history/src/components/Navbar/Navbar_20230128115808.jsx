@@ -4,9 +4,10 @@ import {AiOutlineShoppingCart} from 'react-icons/ai';
 import {FiSettings} from 'react-icons/fi';
 import styles from './Navbar.module.css';
 import {getAdmins, login, logout, onUserStateChange} from '../../api/firebase';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import User from '../User/User';
 import { useAuthContext } from '../../context/AuthContext';
-import CartStatus from '../CartStatus.jsx/CartStatus';
 function Navbar(props) {
   const {user, login, logout} = useAuthContext();
 

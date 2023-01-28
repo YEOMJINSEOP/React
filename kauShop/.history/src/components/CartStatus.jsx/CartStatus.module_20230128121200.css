@@ -1,0 +1,13 @@
+.cart {
+  position: relative;
+}
+.cartStatus {
+  position: absolute;
+  top: -20px;
+  right: 1px;
+  font-size: 14px;
+  background-color: #ef4b3f;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}

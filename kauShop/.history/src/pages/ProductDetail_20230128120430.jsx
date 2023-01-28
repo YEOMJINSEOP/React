@@ -16,11 +16,11 @@ const handleSelect = (e) => {
   setSelected(e.target.value);
 }
 
-const {user} = useAuthContext();
+const {user: {uid}} = useAuthContext();
 const handleClick = (e) => {
   const product = {id, image, title, price, option: selected, quantity: 1};
-  console.log(user.uid);
-  addOrUpdateCart(user.uid, product);
+  console.log(uid);
+  addOrUpdateCart(uid, product);
 }
   return (
     <section>
