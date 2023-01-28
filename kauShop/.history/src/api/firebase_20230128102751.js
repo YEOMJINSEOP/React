@@ -77,14 +77,10 @@ export async function addNewProduct(product, imageUrl){
 };
 
 export async function getProducts(){
-  return get(child(dbRef, 'products'))//
+  return get(child(dbRef, 'admins'))//
   .then(snapshot => {
     if(snapshot.exists()){
-      console.log(snapshot.val());
       return Object.values(snapshot.val());
-    }
-    else{
-      return [];
     }
   })
 }

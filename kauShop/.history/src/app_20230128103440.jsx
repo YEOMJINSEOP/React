@@ -5,10 +5,9 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import { AuthContextProvider } from './context/AuthContext';
 
-const queryClient = new QueryClient();
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
+    <QueryClientProvider client={QueryClient}>
       <AuthContextProvider>
         <Navbar />
         <Outlet />
